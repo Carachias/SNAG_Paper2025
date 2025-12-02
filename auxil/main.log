@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.4)  23 NOV 2025 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.2)  2 DEC 2025 23:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-10-09>
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+(C:\Program Files\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -24,7 +24,7 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/preprint\authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip51
 \@affilsep=\skip52
@@ -32,81 +32,76 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@authors=\count284
 \c@affil=\count285
 )
-(templates/acl2021.sty
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(templates/acl2021.sty (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
-
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
-eys.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.st
-y
+) (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.
-sty
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.st
-y
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+))
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitl
-estring.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring
+.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count286
-) (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count287
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.st
-y
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen149
 \Hy@linkcounter=\count288
 \Hy@pagecounter=\count289
- (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count290
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -120,18 +115,17 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count291
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen150
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.
-sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -151,36 +145,35 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count296
 \c@bookmark@seq@number=\count297
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
-check.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.s
+ty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqueco
-unter.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.s
+ty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip53
-)
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-) (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
 )
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -205,10 +198,10 @@ Conference Style for ACL-IJCNLP 2021
 \cv@tot=\count300
 \cv@tmpc@=\count301
 \cv@tmpc=\count302
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen156
 \captionmargin=\dimen157
@@ -224,14 +217,14 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count304
 Package caption Info: hyperref package is loaded.
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip55
 \bibsep=\skip56
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count305
 ))
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -267,23 +260,22 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+(C:\Program Files\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cf
-g
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
@@ -291,7 +283,7 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 \Gin@req@height=\dimen164
 \Gin@req@width=\dimen165
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
 \MT@toks=\toks18
 \MT@tempbox=\box55
@@ -306,8 +298,7 @@ LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count307
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdft
-ex.def
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 944.
@@ -315,16 +306,16 @@ LaTeX Info: Redefining \lslig on input line 944.
 \MT@outer@space=\skip57
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-) (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLa
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLa
 TeX and XeLaTeX
 \babel@savecnt=\count308
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
@@ -344,29 +335,25 @@ on input line 2083.
 \U@D=\dimen167
 \l@unhyphenated=\language79
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count309
-
-
-Package babel Warning: Configuration files are deprecated, as
-(babel)                they can break document portability.
-(babel)                Reported on input line 4172.
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4175.
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-
-english.tex)
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-english.tex)
 Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 4295.
+(babel)             from babel-en.ini. Reported on input line 4298.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ld
-f
+(C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -375,7 +362,7 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
 ))
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@reset=\count310
 \csq@gtype=\count311
@@ -385,22 +372,22 @@ Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@tshold=\count315
 \csq@ltx@everypar=\toks20
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/numprint\numprint.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/numprint\numprint.sty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen168
 \ar@mcellbox=\box56
 \extrarowheight=\dimen169
@@ -428,17 +415,17 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \c@nprt@cntprint=\count325
 
 No configuration file `numprint.cfg' found.)
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/isodate\isodate.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/isodate\isodate.sty
 Package: isodate 2010/01/03 v2.30 Print dates with different formats (HH)
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count326
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/isodate\english.idf
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/isodate\english.idf
 File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH
 )
 
@@ -452,7 +439,7 @@ Define commands for English date format
 \c@iso@@slash=\count332
 \c@iso@@minus=\count333
 \c@iso@@dot=\count334
-) (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip64
 \enit@outerparindent=\dimen170
@@ -465,16 +452,15 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
 4.
- (C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
-ex.def
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count337
 )
-(C:/Users\Mark\Desktop\Uni\Master\Übungsaufgaben\5 Sem\SNAG\SNAG Paper\auxil\m
-ain.aux)
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
@@ -497,16 +483,13 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 Package hyperref Info: Link coloring ON on input line 64.
 
-(C:/Users\Mark\Desktop\Uni\Master\Übungsaufgaben\5 Sem\SNAG\SNAG Paper\auxil\m
-ain.out)
-(C:/Users\Mark\Desktop\Uni\Master\Übungsaufgaben\5 Sem\SNAG\SNAG Paper\auxil\m
-ain.out)
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.out)
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
-i
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count338
 \scratchdimen=\dimen171
@@ -519,17 +502,15 @@ i
 \MPnumerator=\count342
 \makeMPintoPDFobject=\count343
 \everyMPtoPDFconversion=\toks27
-)
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
-se.sty
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cf
-g
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) ABD: EveryShipout initializing macros
+))
+ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \big@size=\dimen173
@@ -551,13 +532,13 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 isodate: babel.sty has been loaded
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  65.
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -567,19 +548,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
  65.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
  65.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
  65.
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -591,11 +572,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 65
 .
 
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+(C:\Program Files\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-
 Underfull \hbox (badness 7362) in paragraph at lines 127--151
 \OT1/ptm/m/n/10.95 (+20) Tats[]achlich ist genau diese Effizienz- und
  []
@@ -616,69 +595,18 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 169--170
 [][] 
  []
 
-
-
-[1{C:/Users/Mark/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Mar
-k/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+[1{C:/Users/Mark/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program F
+iles/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 
 ]
-
-main.tex:213: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.213 \texttt{192.232.0.0\slash22} \hspace{10}
-                                               $\rightarrow$ \hspace{10} les...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 213.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 213.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 213.
-main.tex:213: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.213 ...22} \hspace{10} $\rightarrow$ \hspace{10}
-                                                   less precise
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-main.tex:218: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.218 \texttt{192.232.0.0\slash24} \hspace{10}
-                                               $\rightarrow$ \hspace{10} mor...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-main.tex:218: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.218 ...24} \hspace{10} $\rightarrow$ \hspace{10}
-                                                   more precise
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 <images/prefix_specific_hijack.png, id=16, 1204.5pt x 542.025pt>
 File: images/prefix_specific_hijack.png Graphic file (type png)
 <use images/prefix_specific_hijack.png>
@@ -704,8 +632,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--230
 Underfull \hbox (badness 10000) in paragraph at lines 206--230
 
  []
-
-
 
 [2 <./images/basic_bgp_route_announcements.jpg> <./images/prefix_specific_hijac
 k.png>]
@@ -748,11 +674,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--326
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
 30.
-(C:\Users\Mark\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+(C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-
-
 Underfull \hbox (badness 1831) in paragraph at lines 331--333
 \OT1/ptm/m/n/10.95 (+20) ary 2008: AS36561 (YouTube) an-nounces
  []
@@ -842,114 +766,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--433
 \OT1/ptm/m/n/10.95 (+20) tung von Ver[]anderun-gen im gew[]ohn-lichen
  []
 
-
-
 [3 <./images/path_hijack.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 434--468
+Underfull \hbox (badness 10000) in paragraph at lines 434--473
 \OT1/ptm/m/n/10.95 (+20) Ein Beispiel hi-erf[]ur w[]are die pl[]otzliche
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 434--468
+Underfull \hbox (badness 1675) in paragraph at lines 434--473
 \OT1/ptm/m/n/10.95 (+20) M[]oglicher-weise han-delt es sich nur um den
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 434--468
+Underfull \hbox (badness 1939) in paragraph at lines 434--473
 \OT1/ptm/m/n/10.95 (+20) sehr spez-i-fis-chen An-nounce-ments mit lan-gen
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 434--473
+\OT1/ptm/m/n/10.95 (+20) Um-leitung be-trof-fe-nen pre-fixes helfen([][]B[]uhle
+r
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
 
-Overfull \hbox (32.7522pt too wide) in paragraph at lines 470--554
+Overfull \hbox (32.7522pt too wide) in paragraph at lines 480--564
 [][]\OT1/ptm/m/n/10.95 (-20) lancom-systems.de/docs/LCOS/Refmanual/DE/topics/bg
 p-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--554
+Underfull \hbox (badness 10000) in paragraph at lines 480--564
 
  []
 
-
-
-[4]
-
-
-
-[5
+[4] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.bbl) [5
 
 ]
-(C:/Users\Mark\Desktop\Uni\Master\Übungsaufgaben\5 Sem\SNAG\SNAG Paper\auxil\m
-ain.aux)
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-10-09>
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  )
 (\end occurred when \ifx on line 9 was incomplete) 
 Here is how much of TeX's memory you used:
- 15980 strings out of 468080
- 262610 string characters out of 5426256
- 740611 words of memory out of 5000000
- 44174 multiletter control sequences out of 15000+600000
- 674532 words of font info for 263 fonts, out of 8000000 for 9000
+ 16005 strings out of 467871
+ 260298 string characters out of 5428446
+ 744104 words of memory out of 5000000
+ 44396 multiletter control sequences out of 15000+600000
+ 674770 words of font info for 267 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,14n,93p,1003b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Mark/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Mark/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Mar
-k/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/U
-sers/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pf
-b><C:/Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb
-><C:/Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-<C:/Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-
-Output written on "C:/Users\Mark\Desktop\Uni\Master\Übungsaufgaben\5 Sem\SNAG\
-SNAG Paper\out\main.pdf" (5 pages, 337596 bytes).
+ 90i,14n,93p,1003b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb
+><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on "C:/Users\Mark\Desktop\git projects\snag_paper\out\main.pdf" 
+(5 pages, 339779 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
  74768 words of extra memory for PDF output out of 89155 (max. 10000000)
 

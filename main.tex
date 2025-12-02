@@ -35,7 +35,7 @@
 \setlist[itemize]{nosep}
 
 \newcommand\BibTeX{B\textsc{ib}\TeX}
-%\newcommand{\Vox}{VoxML Annotation Environment\xspace} % VoxML Annotation Survey
+\newcommand{\Vox}{VoxML Annotation Environment\xspace} % VoxML Annotation Survey
 \newcommand{\ttlabanno}{TTLab VoxML Annotator\xspace}
 
 \title{BGP Hijacking}
@@ -210,12 +210,12 @@ Ein Announcement wird immer dann präziser, wenn der Prefix in der CIDR Notation
 \newline
 \newline
 %
-\texttt{192.232.0.0\slash22} \hspace{10} $\rightarrow$ \hspace{10} less precise
+\texttt{192.232.0.0\slash22} \hspace{10pt} $\rightarrow$ \hspace{10pt} less precise
 %
 \newline
 \newline
 %
-\texttt{192.232.0.0\slash24} \hspace{10} $\rightarrow$ \hspace{10} more precise
+\texttt{192.232.0.0\slash24} \hspace{10pt} $\rightarrow$ \hspace{10pt} more precise
 %
 \newline
 \newline
@@ -463,9 +463,19 @@ gezielt zu manipulieren.
 Das passiert zum Beispiel dann, wenn ein AS einen großen Adressraum mit vielen, sehr
 spezifischen Announcements mit langen Präfixen übernehmen möchte.
 %
+\newline
+%
+Um bösartige Angriffe von \enquote{normalen} Vorfällen zu unterscheiden, kann eine
+Analyse der von einer Umleitung betroffenen prefixes
+helfen\citep{buehler:2023}
 %
 %
-\section{References}
+\section{Conclusion}
+%
+%
+%
+
+\section{Selfmade References}
 %
 Wikipedia Eintrag zum BGP:
 %
@@ -575,9 +585,10 @@ Basiswissen Route Filtering:
 %
 %
 %
-%\bibliographystyle{templates/acl_natbib}
-%\bibliography{bibshort}
-%
+\bibliographystyle{templates/acl_natbib}
+\bibliography{bibtest}
+
+
 %\appendix
 %
 %

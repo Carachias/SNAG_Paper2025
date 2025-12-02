@@ -1,4 +1,11 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{1}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Bühler et~al.(2023)Bühler, Milolidakis, Jacob, Chiesa, Vissicchio,
+  and Vanbever}]{buehler:2023}
+Tobias Bühler, Alexandros Milolidakis, Romain Jacob, Marco Chiesa, Stefano
+  Vissicchio, and Laurent Vanbever. 2023.
+\newblock \href {http://arxiv.org/abs/2301.12843} {Oscilloscope: Detecting bgp
+  hijacks in the data plane}.
 
 \end{thebibliography}

@@ -14,7 +14,7 @@
 
 % It is nearly identical to the style files for ACL 2015,
 % ACL 2014, EACL 2006, ACL2005, ACL 2002, ACL 2001, ACL 2000,
-% EACL 95 and EACL 99.
+% EACL 95 and EACL 99. 
 %
 % Changes made include: adapt layout to A4 and centimeters, widen abstract
 
@@ -30,11 +30,11 @@
 
 % The ANLP '94 style file is a slightly modified
 % version of the style used for AAAI and IJCAI, using some changes
-% prepared by Fernando Pereira and others and some minor changes
+% prepared by Fernando Pereira and others and some minor changes 
 % by Paul Jacobs.
 
 % Papers prepared using the aclsub.sty file and acl.bst bibtex style
-% should be easily converted to final format using this style.
+% should be easily converted to final format using this style.  
 % (1) Submission information (\wordcount, \subject, and \makeidpage)
 % should be removed.
 % (2) \summary should be removed.  The summary material should come
@@ -46,7 +46,7 @@
 % column, some adjustments may have to be made to fit text in the column
 % or to choose full-width (\figure*} figures.
 
-% Place this in a file called aclap.sty in the TeX search path.
+% Place this in a file called aclap.sty in the TeX search path.  
 % (Placing it in the same directory as the paper should also work.)
 
 % Prepared by Peter F. Patel-Schneider, liberally using the ideas of
@@ -109,7 +109,7 @@
   % It provides a backup, no-op definiton of \href.
   % This is necessary because \href command is used in the acl_natbib.bst file.
   \def\href#1#2{{#2}}
-  % We still need to load xcolor in this case because the lighter line numbers require it. (SC/KG/WL)
+  % We still need to load xcolor in this case because the lighter line numbers require it. (SC/KG/WL) 
   \usepackage{xcolor}
 \fi
 
@@ -126,16 +126,16 @@
 % A4 modified by Eneko; again modified by Alexander for 5cm titlebox
 \setlength{\paperwidth}{21cm}   % A4
 \setlength{\paperheight}{29.7cm}% A4
-\setlength\topmargin{-0.5cm}
-\setlength\oddsidemargin{0cm}
-\setlength\textheight{24.7cm}
+\setlength\topmargin{-0.5cm}    
+\setlength\oddsidemargin{0cm}   
+\setlength\textheight{24.7cm} 
 \setlength\textwidth{16.0cm}
-\setlength\columnsep{0.6cm}
-\newlength\titlebox
+\setlength\columnsep{0.6cm}  
+\newlength\titlebox 
 \setlength\titlebox{5cm}
-\setlength\headheight{5pt}
+\setlength\headheight{5pt}   
 \setlength\headsep{0pt}
-\thispagestyle{empty}
+\thispagestyle{empty}        
 \pagestyle{empty}
 
 
@@ -149,7 +149,7 @@
 \aclfinalfalse
 \def\aclfinalcopy{\global\aclfinaltrue}
 
-%% ----- Set up hooks to repeat content on every page of the output doc,
+%% ----- Set up hooks to repeat content on every page of the output doc, 
 %% necessary for the line numbers in the submitted version.  --MM
 %%
 %% Copied from CVPR 2015's cvpr_eso.sty, which appears to be largely copied from everyshi.sty.
@@ -158,18 +158,18 @@
 %% Original evershi.sty available at: https://www.ctan.org/pkg/everyshi
 %%
 %% Copyright (C) 2001 Martin Schr\"oder:
-%%
+%% 
 %%                         Martin Schr"oder
 %%                         Cr"usemannallee 3
 %%                         D-28213 Bremen
 %%                         Martin.Schroeder@ACM.org
-%%
+%% 
 %% This program may be redistributed and/or modified under the terms
 %% of the LaTeX Project Public License, either version 1.0 of this
 %% license, or (at your option) any later version.
 %% The latest version of this license is in
 %%    CTAN:macros/latex/base/lppl.txt.
-%%
+%% 
 %% Happy users are requested to send [Martin] a postcard. :-)
 %%
 \newcommand{\@EveryShipoutACL@Hook}{}
@@ -209,14 +209,14 @@
 %%
 %% Original available at: https://www.ctan.org/tex-archive/macros/latex/contrib/eso-pic
 %% Copyright (C) 1998-2002 by Rolf Niepraschk <niepraschk@ptb.de>
-%%
+%% 
 %% Which may be distributed and/or modified under the conditions of
 %% the LaTeX Project Public License, either version 1.2 of this license
 %% or (at your option) any later version.  The latest version of this
 %% license is in:
-%%
+%% 
 %%    http://www.latex-project.org/lppl.txt
-%%
+%% 
 %% and version 1.2 or later is part of all distributions of LaTeX version
 %% 1999/12/01 or later.
 %%
@@ -281,7 +281,7 @@
   \egroup
 }
 \EveryShipoutACL{\@ShipoutPicture}
-\newif\ifESO@dvips\ESO@dvipsfalse
+\newif\ifESO@dvips\ESO@dvipsfalse 
 \newif\ifESO@grid\ESO@gridfalse
 \newif\ifESO@texcoord\ESO@texcoordfalse
 \newcommand*\ESO@griddelta{}\newcommand*\ESO@griddeltaY{}
@@ -298,7 +298,7 @@
 
 %% ----- Submitted version markup: Page numbers, ruler, and confidentiality.  Using ideas/code from cvpr.sty 2015. --MM
 
-\font\aclhv  = phvb at 8pt
+\font\aclhv  = phvb at 8pt 
 
 %% Define vruler %%
 
@@ -355,7 +355,7 @@
 \AtPageLowishCenter{\textcolor{black}{\thepage}}
 \aclruleroffset=\textheight
 \advance\aclruleroffset4pt
-  \AtTextUpperLeft{%
+  \AtTextUpperLeft{% 
     \put(\LenToUnit{\leftoffset},\LenToUnit{-\aclruleroffset}){%left ruler
       \aclruler{\aclrulercount}}
     \put(\LenToUnit{\rightoffset},\LenToUnit{-\aclruleroffset}){%right ruler
@@ -375,18 +375,18 @@
 
 \newcommand\outauthor{
     \begin{tabular}[t]{c}
-	\ifaclfinal
+	\ifaclfinal 
 	     \bf\@author
-	\else
+	\else 
 		% Avoiding common accidental de-anonymization issue. --MM
-        \bf Anonymous IWCS submission \\ The style files are borrowed from ACL-IJCNLP 2021
+        \bf Anonymous IWCS submission \\ The style files are borrowed from ACL-IJCNLP 2021  
 	\fi
     \end{tabular}}
 
 % Changing the expanded titlebox for submissions to 2.5 in (rather than 6.5cm)
 % and moving it to the style sheet, rather than within the example tex file. --MM
-\ifaclfinal
-\else
+\ifaclfinal 
+\else 
 	\addtolength\titlebox{.25in}
 \fi
 % Mostly taken from deproc.
@@ -403,14 +403,14 @@
  \linewidth\hsize \vskip 0.125in minus 0.125in \centering
  {\Large\bf \@title \par} \vskip 0.2in plus 1fil minus 0.1in
  {\def\and{\unskip\enspace{\rm and}\enspace}%
-  \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
+  \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil 
            \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bf}%
   \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
           \vskip 0.25in plus 1fil minus 0.125in
            \hbox to \linewidth\bgroup\large \hfil\hfil
              \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bf}
   \hbox to \linewidth\bgroup\large \hfil\hfil
-    \hbox to 0pt\bgroup\hss
+    \hbox to 0pt\bgroup\hss 
 	\outauthor
    \hss\egroup
     \hfil\hfil\egroup}
@@ -427,8 +427,8 @@
 		   \@setsize\normalsize{12pt}\xpt\@xpt
 		   }%
 		 {\unskip\end{list}}
-
-%\renewenvironment{abstract}{\centerline{\large\bf
+  
+%\renewenvironment{abstract}{\centerline{\large\bf  
 % Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
 
 % Resizing figure and table captions - SL
@@ -437,7 +437,7 @@
 \renewcommand{\fnum@figure}{\figcapfont Figure \thefigure}
 \renewcommand{\fnum@table}{\tabcapfont Table \thetable}
 \renewcommand{\figcapfont}{\@setsize\normalsize{12pt}\xpt\@xpt}
-\renewcommand{\tabcapfont}{\@setsize\normalsize{12pt}\xpt\@xpt}
+\renewcommand{\tabcapfont}{\@setsize\normalsize{12pt}\xpt\@xpt}	
 % Support for interacting with the caption, subfigure, and subcaption packages - SL
 \usepackage{caption}
 \DeclareCaptionFont{10pt}{\fontsize{10pt}{12pt}\selectfont}
@@ -447,11 +447,11 @@
 % for citation commands in the .tex, authors can use:
 % \citep, \citet, and \citeyearpar for compatibility with natbib, or
 % \cite, \newcite, and \shortcite for compatibility with older ACL .sty files
-\renewcommand\cite{\citep}	% to get "(Author Year)" with natbib
-\newcommand\shortcite{\citeyearpar}% to get "(Year)" with natbib
-\newcommand\newcite{\citet}	% to get "Author (Year)" with natbib
+\renewcommand\cite{\citep}	% to get "(Author Year)" with natbib    
+\newcommand\shortcite{\citeyearpar}% to get "(Year)" with natbib    
+\newcommand\newcite{\citet}	% to get "Author (Year)" with natbib    
 
-% DK/IV: Workaround for annoying hyperref pagewrap bug
+% DK/IV: Workaround for annoying hyperref pagewrap bug 
 \RequirePackage{etoolbox}
 %\patchcmd\@combinedblfloats{\box\@outputbox}{\unvbox\@outputbox}{}{\errmessage{\noexpand patch failed}}
 
@@ -531,7 +531,7 @@
    \itemsep \parsep}
 \def\@listiii{\leftmargin\leftmarginiii
     \labelwidth\leftmarginiii\advance\labelwidth-\labelsep
-    \topsep 1pt plus 0.5pt minus 0.5pt
+    \topsep 1pt plus 0.5pt minus 0.5pt 
     \parsep \z@ \partopsep 0.5pt plus 0pt minus 0.5pt
     \itemsep \topsep}
 \def\@listiv{\leftmargin\leftmarginiv
@@ -543,7 +543,7 @@
 
 \abovedisplayskip 7pt plus2pt minus5pt%
 \belowdisplayskip \abovedisplayskip
-\abovedisplayshortskip  0pt plus3pt%
+\abovedisplayshortskip  0pt plus3pt%   
 \belowdisplayshortskip  4pt plus3pt minus3pt%
 
 % Less leading in most fonts (due to the narrow columns)
