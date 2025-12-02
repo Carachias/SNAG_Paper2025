@@ -1,0 +1,415 @@
+%! Author = Mark Klement
+%! Date = 05.11.2025
+
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{authblk}
+\usepackage[hyperref]{templates/acl2021}
+% \usepackage{times} % superseded by:
+\usepackage{mathptmx}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{7cm} %% nur für Variante 1
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\usepackage{xspace}
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage[autolanguage]{numprint}
+\usepackage[english]{isodate}
+\usepackage{enumitem}
+\setlist[itemize]{nosep}
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+%\newcommand{\Vox}{VoxML Annotation Environment\xspace} % VoxML Annotation Survey
+\newcommand{\ttlabanno}{TTLab VoxML Annotator\xspace}
+
+\title{A Survey on BGP Path Hijacking Incidents}
+
+
+%% das scheint am float placement auch nichts zu ändern:
+%\setcounter{topnumber}{2}
+%\setcounter{bottomnumber}{2}
+%\setcounter{totalnumber}{4}
+%\renewcommand{\topfraction}{0.85}
+%\renewcommand{\bottomfraction}{0.85}
+%\renewcommand{\textfraction}{0.15}
+%\renewcommand{\floatpagefraction}{0.7}
+
+
+%% Variante 1:
+\author[*1]{Mark Klement}
+\affil[*]{Chair for Cybersecurity, Goethe-University Frankfurt}
+\affil[1]{\texttt{s6840520@stud.uni-frankfurt.de}}
+
+
+\date{05.11.2025}
+
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+- was vorhanden ist, ist qualitativ schon sehr gut.
+--> sehr gute und akkurate Beschreibungen der eigentlichen Angriffe
+--> viele quellen, die auch schon gut und intensiv eingebunden wurden
+--> "Was" ist sehr gut geklärt
+--> aber das "Wie" und "Warum" fehlt mir ein bisschen
+    --> bspw bei den attack varianten
+    --> drivers of concentration geht darauf ein bisschen besser ein.
+
+Was mir fehlt:
+- Was sind die "motivationen" für diese angriffe?
+- also warum speziell diese art von angriff nutzen?
+--> angriffe wirken sehr random/ ziellos
+    --> einfach ein malicious package mit falschem namen hochladen und hoffen, dass
+auf gut glück jemand darauf hereinfällt?
+ist das wirklich alles?
+    --> wenn ja, ist das eine schwäche dieses Angriffs und hat das einfluss auf den "
+use case" solcher angriffe?
+
+    --> ein bisschen was zum genaueren vorgehen der angreifer / ablauf des angriffs ist
+in dem slopsquatting teil enthalten --> gut! (also der part in dem beschrieben wird, dass
+angreifer analysieren, welche package namen oft haluziniert werden usw.)
+
+
+fazit wirkt ein bisschen einseitig:
+--> mehr tatsächliche perspektive des angreifers / des verteidigers einnehmen
+    --> es klingt im abschlussbereich des papers so als wären verteidiger den
+angreifern komplett hilflos ausgeliefert.
+    --> gerade im bereich slopsquatting: können gezielte minischulungen Firmen
+und Betrieben
+helfen die entwickler dafür zu sensibilisieren sich bspw bei der packagewahl nicht zu
+sehr auf ai tools zu verlassen?
+anforderungsanalysen bzgl packages und libraries manuell zu machen und erst nach
+diesem schritt ai tools zur codegenerierung zu nutzen?
+    --> es wird beschrieben dass es eine starke konzentration dieser angriffe in 2
+language frameworks gibt.
+kann man dann nicht stattdessen versuchen entwickler dafür zu sensibilisieren andere
+frameworks zu nutzen?
+
+--> sehr gut auf den "kampf an der technischen front" eingegangen, aber die
+menschliche komponente vielleicht ein bisschen vernachlässigt?
+    --> weil hier ist ja definitv eine menschliche komponente vorhanden.
+    Niemand zwingt entwickler zur übermäßigen Nutzung von AI-tools.
+Das sind entscheidungen von Managern die strikte deadlines festlegen oder entwickler
+die sich eventuell einen teil der harten arbeit sparen möchten.
+Zumindest über solche Risiken kann man Manager und Entwickler aufklären.
+
+
+Insgesamt aber schon sehr gut und ausgereift für first draft!
+
+
+
+
+The aim of this paper is to evaluate the annotation tool used in VoxML Track ISA-17 henceforth called \Vox\footnote{\url{https://github.com/csu-signal/VoxML-Track-Annotation-2021}}.
+%
+We describe our experiences with the modeling language VoxML, present our own annotation tool -- called \ttlabanno\ --. and work out qualitative criteria for evaluating both tools.
+%
+In our view, the most important criteria for efficient annotation are its speed and the quality and standardization of the resulting annotations for downstream tasks.
+%
+In addition to this evaluation, we make suggestions for improvements to help increase the practical use of \Vox in the underlying annotation domain.
+%
+Finally, we describe a set of extensions and additional application areas.
+\end{abstract}
+
+\section{Introduction} % Henlein
+VoxML~\citep{Pustejovsky:Krishnaswamy:2016}
+is a versatile modeling language for storing \enquote{semantic knowledge about real-world objects} and events and attributes related to them.
+%is a versatile modeling language for storing \enquote{\textcolor{magenta}{semantic knowledge of real-world objects}}  %  semantic information.
+%
+In the area of Text2Scene generation, VoxML stands out above all for its ability to model so-called habitats and verbs of motion and thus generate not only static but also animated scenes and context-sensitive behavior fully automatically~\citep{Krishnaswamy:Pustejovsky:2016}.
+
+In this paper we describe our work in connection with VoxML.
+%
+We discuss the data types we have chosen and the tools we have created to gain evaluation criteria for \Vox.
+%
+This is followed by a description and evaluation of using its interface and annotation guidelines.
+%
+Thirdly, we propose a number of improvements and extensions to \Vox and VoxML modeling language itself.
+
+
+\section{\ttlabanno} \label{sec:Experiences}
+Our primary field of application for VoxML is Text2Scene generation\citep{Tan:Feng:Ordonez:2019}.
+%
+VoxML itself supports the modeling of attributes (like colors), functions (e.g. n:1 mapping), programs (motion sequences of verbs), relations (on, in front of, ...) and the assignment of these to corresponding objects.
+%
+Based on these VoxML descriptions, VoxSim~\citep{Krishnaswamy:Pustejovsky:2016} offers an \enquote{event simulation engine} for the simulation of agents behaviors.
+%
+Our goal was to create an annotation tool that can be used to directly annotate these descriptions.
+
+%Therefore, we consider the way VoxML is used in the simulation environment called \enquote{VoxSim}~\citep{Krishnaswamy:Pustejovsky:2016}, \textcolor{magenta}{an \enquote{event simulation engine} based on the VoxML Verb Modeling}.
+
+%\textcolor{red}{Our first step was to extend the scope of Voxicon supported by VoxSim.}
+%
+%Apart from \textcolor{red}{modeling} motion verbs, this mainly includes the annotation of objects and their representation as 3D models.
+%
+Since VoxML documents are XML-compliant and thus have a tag-based structure with repetitive elements, the idea arose to simplify and accelerate the creation process for VoxML documents.
+%
+For this purpose, we developed a desktop annotation program, called \enquote{\ttlabanno}, with a graphical user interface using Python / Tkinter.
+%
+As already indicated, the simplification was achieved by exploiting repetitive tags and components of the documents.
+%
+In addition, we strive for a high degree of standardization of annotation documents by using spin boxes and option menus with predefined options for input instead of text fields wherever possible.
+%
+For a screenshot of \ttlabanno see Figure \ref{fig:interface}.
+%
+\begin{figure*}
+\centering
+\includegraphics[width=0.85\textwidth]{images/annotatorinterface.png}
+\caption{The interface of \ttlabanno for simplifying VoxML-related annotations. In the upper left corner, the different VoxML types can be selected and then annotated in the main window. On the right, you can open the preview images of ShapeNet~\citep{Chang:et:al:2015} and PartNet~\citep{Mo:et:al:2019} and thus align the object annotation with these models.}
+\label{fig:interface}
+\end{figure*}
+%
+A major advantage of simplifying the annotation process is that it allows the annotation tool to be used by non-specialists with little effort and without a long training period.
+%
+%A prominent example of this is the outsourcing of simple tasks in the creation process of the datasets in the ModelNet~\citep{Wu:et:al:2015} project to Amazon's Mechanical Turk service~\footnote{\url{https://www.mturk.com/}}. %as stated on the projects website [source 1].
+
+To further speed up the annotation process we started experimenting with annotations of objects based on machine learning (ML).
+%
+This was achieved by exploiting the fact that objects can often be assigned to classes of objects that consequently share sets of features.
+%
+%Another point of interest was not to perform these experiments on images or other Euclidean representations of the 3D models.
+%
+%Instead, all representations used, namely 3D meshes, point clouds and graphs, are non-Euclidean representations of 3D dimensional data.
+%
+%The result is a classifier that can be trained on point clouds generated from 3D models, and is able to assign VoxML templates to the 3D models according to their classes.
+%
+More specifically, we trained a classifier that maps point clouds to the 10 basic classes of ModelNet10~\citep{Wu:et:al:2015}.
+%
+The neural network itself is based on PointNet~\citep{Qi:et:al:2017} and DGCNN~\citep{Wang:et:al:2019}.
+%
+For all 10 classes we created predefined VoxML documents, which then only have to be adapted for the corresponding objects.
+%
+ModelNet also provides a dataset with 40 object categories.
+%
+For these we have already prepared corresponding VoxML documents, the classifier only needs to be trained on this dataset.
+%
+In the future, as more data becomes available, this classification will be applied directly to individual attributes instead of giving pre-annotated suggestions.
+
+Based on these adaptations and extensions, the simplification and acceleration or automation of annotation as well as the standardization of its results are the most important factors guaranteeing efficient annotation processes.
+%
+Accordingly, we utilize these criteria to evaluate \Vox.
+%
+%Of course, we will take into account that the annotation of entire scenes is a potentially more complex task than the annotation of individual objects.
+%
+%A comparison between \Vox and \ttlabanno is shown in Table~\ref{tab:comparison}.}
+
+
+
+\section{Experiencing \Vox}\label{sec:Functionality} % Henlein, Klement,
+\Vox, provided for the ISA17 Visualization Track, gives the annotator an image as annotation source.
+%
+The annotator is then asked to generate a caption for the image and describe the key activity depicted in it.
+%
+This includes a list of involved objects and the activities associated with them.
+%
+Furthermore, it must be answered which conditions must be fulfilled for these activities and whether they are also represented in the scene.
+
+%\begin{table}[]
+%\begin{adjustbox}{max width=0.5\textwidth}
+%    \begin{tabular}{ l | c | c}
+%         & \textbf{\ttlabanno} & \textbf{\Vox} \\ \hline
+%    Medium & 3D Objects & Images \\
+%    Focus & Objects & Actions \& Relations \\
+%    Annotation & VoxML Direct & Text \\
+%    Language & Python (Client) & Node.js (Browser) \\
+%    Utilizes machine learning & Yes & No \\
+%    \textcolor{red}{Requires knowledge of VoxML} & Yes & No \\
+%    \end{tabular}
+%    \end{adjustbox}
+%    \caption{Comparison of two annotation systems for VoxML:
+    %
+%    \textcolor{red}{Both tools address different application areas and are therefore not directly comparable, which is why we refrain from a statistical comparison and instead base our analysis on a qualitative evaluation.}}
+%    \label{tab:comparison}
+
+%\end{table}
+
+
+
+\subsection{Advantages}
+\Vox is easy to use and clearly structured with respect to the addressed task.
+%
+One gets into the annotation process very quickly without having to familiarize oneself extensively with the tool.
+%
+Its browser interface makes its mobile, ubiquitous use just as easy.
+%
+In contrast to this, the annotation of VoxML entities, programms, etc. appears comparatively abstract and requires a basic knowledge of the underlying model and its predefined syntax.
+%
+However, by means of pictorial examples and the replacement of the XML-based VoxML syntax by textual annotations, the annotation process is simplified.
+%
+The setup itself is also straightforward.
+
+The annotation manual is short and compact, using an example as a guide.
+%
+For most annotations this is sufficient, but a few points remained unclear (see Section \ref{subsec:Weaknesses})).
+
+
+
+\subsection{Disadvantages} \label{subsec:Weaknesses}
+%In this section, we will address the weaknesses identified using the criteria for a well-structured annotation process described in Section \ref{sec:Experiences}.
+Given the three criteria of efficient annotation processes from Section \ref{sec:Experiences}, there are several reference points for improving \Vox.
+
+%In the current state, user input is received exclusively through text fields.
+%
+%When generating scene headings and naming objects, this is a legitimate approach due to the enormous number of possible scenes and configurations.
+Currently, user input is done exclusively via text fields.
+%
+When naming scenes (headings) and objects, this is a legitimate approach due to the amount of possible scenes and configurations.
+%
+%Standardizing the input at this point by using predefined option menus most likely provides for too high a discrepancy between the actual scene and what can be modeled with the tool.
+%
+%However, we still see potential for optimization in the modeling of core interactions and spatial configurations and relations.
+However, we see potential for optimization in the modeling of interactions and spatial relations:
+
+(1) %In the case of entity interactions, a lot of redundant annotations take place because of the use of the passive voice.
+In the area of entity interactions, redundant annotations occur due to the use of the passive voice (e.g., \enquote{The woman holds the cup} vs.\ \enquote{The cup is held by the woman}).
+%
+%By \textcolor{red}{representing} interactions as tuples, the manual annotation in the passive voice can be completely avoided and automatically generated.
+By representing interactions as tuples, annotations of passive constructions can be generated automatically.
+%
+%For example, the verb of the corresponding interaction would be stored in its base form together with a tuple consisting of an actor and entity involved.
+The task of this simplification is to represent the verb denoting the interaction in the infinitive together with the arguments involved in order to generate the active or passive form.
+%
+This can not only speed up the annotation, but also increase its quality in cases where the annotator is not a native speaker or is not fully familiar with the passive voice of, for example, rare verbs.
+
+(2) In the case of annotating object relations, a related problem concerns their reference points.
+%
+Thus, spatial configurations and relations can be simplified by analogy to interactions.
+%
+For example, reverse relations can be automatically generated by tuples with reversed argument order.
+%
+This also concerns the automatic generation of transitive relations:
+%
+if it is annotated that there is a phone on a table in the current scene and the ceiling fan above the phone, it can be inferred that the fan is above the table.
+%
+%Since the number of spatial relations is relatively small, it is advisable to give the user the ability to select a relation from predefined option menus or spinboxes instead of text fields.
+Since the number of spatial relations is relatively small, it is better for the user to select them from predefined option menus or spin boxes rather than typing them into freely editable text fields.
+%
+A side effect of predefined inputs is the avoidance of spelling errors.
+%
+At the same time, the spatial relations can be adapted to the IsoSpace standard~\citep{Pustejovsky:et:al:2011,ISO24617-7-20}.
+%
+However, this can again significantly increase the complexity of the annotation.
+
+(3) The last note refers to the fact that completed annotations can no longer be modified.
+%
+%If the annotator realizes after a few images that you would like to use, for example, one name for a specific activity throughout all the annotations instead of several synonyms in order to unify the annotations, there is no possibility to do so.
+If, after annotating multiple images, the annotator finds that a particular activity should be named consistently instead of using multiple synonyms, there is no option for post-correction.
+%
+In contrast, standardizing the annotation of interactions and relations in the manner described above would significantly reduce the need for this feature.
+
+
+\subsection{Summary}
+The annotation process is clear and it is quite easy to get familiar with the system.
+%
+The annotation guide itself is compact, but sufficient in most cases, and the few ambiguities should be easy to add to.
+%
+The simplicity and accessibility of the annotation is partly due to the many free-text fields, but we would still like to see more standardization and thus less room for error.
+%
+Many annotations could also be automated and thus accelerated in the long run if the same information did not have to be entered for the umpteenth time (if, for example, several cups had already been annotated before), but could be taken from (one's own) previous annotations.
+
+
+
+\section{Minor Points}
+We list minor issues regarding \Vox and its annotation guidelines.
+%
+The first note is about two bugs, one of which is almost negligible and one of which can be at least partially bypassed during annotation.
+%
+The smaller one is the fact that the first image displayed after starting the interface changes as soon as the annotation is started.
+%
+%The more annoying bug comes into play when new annotations are added or removed above existing entries.
+The more problematic bug comes into play when new annotations need to be added or removed.
+%
+%Then not only one entry is changed, but all entries below it are shifted and have to be corrected.
+Then not only one entry is changed, but all subsequent entries are moved and must be corrected.
+
+A final comment concerns the example given in the annotation guideline, which is obviously too simple also due to lack of ambiguity.
+%
+Thus, it remains unclear how to deal with duplicates of objects in a scene.
+%
+%One image of the dataset contains a scene with some plates on a table (Image 28), two of which have food on them.
+%
+%In the example it was neither clarified whether the plates that do not contain food should be annotated more than once, nor was it clarified how to deal with the apparently more important plates, that is, those that contain food.
+One image of the dataset contains a scene with several plates on a table (Figure 28), two of which are covered with food.
+%
+This example does not clarify whether the plates that do not contain food should be annotated more than once, nor does it explain how to handle the seemingly more important plates that contain food.
+%
+%We would welcome a more difficult example in the annotation guidelines.
+%
+
+\section{Points of Interest} % Henlein
+%We are aware that the great advantage of the current annotation environment is its
+Simplicity is of utmost interest:
+%
+%as much information as possible can be extracted from the images with as little work as possible for the annotator.
+as much information as possible should be extracted from images, with as little effort as possible.
+%
+However, the more information that needs to be annotated, the longer this process takes and the more exhausting it is for the annotator.
+%
+%In the following paragraphs we give a few suggestions as to which information might still be of interest
+In the following enumeration, we provide suggestions as to what information is still of interest to annotate\footnote{For illustration purposes, all following examples are related to the example from the Annotation Guideline   (\url{https://github.com/csu-signal/VoxML-Track-Annotation-2021/blob/main/ISA-17-guideline.pdf}).}.
+
+\paragraph{Timing of the activities:}
+Instead of simply listing the activities associated with an object, they should be arranged chronologically.
+%
+%This may result in the omission of the element \enquote{circumstances that would need to be changed for this activity to be performed}, while also providing better structuring of the annotation for post-processing.
+This eliminates the need to enumerate circumstances that the activity requires in order to be executable, while at the same time better structuring the annotation for possible post-processing.
+
+\paragraph{Entity to image mapping:}
+Since all entities are to be enumerated in writing, we could also mark them directly in the image.
+%
+However, we are not sure how interesting such a dataset could be, since there are already huge amounts of them (e.g. COCO~\citep{Lin:et:al:2014}).
+%
+But it could help with the disambiguation of object terms (table = dining table, bedroom table, ...).
+
+\paragraph{Hyponymy \& Hypernymy}
+Annotation of such relations could also reduce annotation overhead.
+%
+For example, in the example \textit{glass} and \textit{cup} can be grouped together as \enquote{drinking vessel} (or per WordNet~\citep{Miller:1995} \enquote{container}).
+%
+\enquote{Be drunk from} and \enquote{be held} can then be assigned to \enquote{drinking vessel} with the annotation that \textit{glass} and \textit{cup} are each a drinking vessel.
+%
+Ideally, such relations can be extended and completed across all annotations.
+
+\paragraph{Holonymy \& Meronymy}
+In addition to the enumeration of entities, part-of-relations are also interesting.
+%
+A wine glass, for example, is not held \enquote{as a whole} but usually by its stem.
+%
+However, in contrast to hyponymy relations, there are hardly any meronymy datasets so far, and if there are, they are very limited (e.g. PartNet~\citep{Mo:et:al:2019} or WordNet).
+
+\section{Conclusion}
+%We see great potential in the versatility and mobility of the approach presented.
+%
+%In addition, it should be emphasized how precisely the given scenes can be described with the offered tool.
+%
+%However, we still see potential in simplifying and accelerating the annotation process in order to relieve the user and increase the quality of the results.
+%
+We see great potential in the versatility and ubiquitous usability of \Vox.
+%
+It is also worth mentioning that this environment allows very precise descriptions of scenes.
+%
+Nevertheless, we also see considerable potential in simplifying and accelerating the corresponding annotation process in order to relieve the user and increase the quality of annotation results.
+
+\bibliographystyle{templates/acl_natbib}
+\bibliography{bibshort}
+
+%\appendix
+
+
+
+\end{document}
