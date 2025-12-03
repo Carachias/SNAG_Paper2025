@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.2)  3 DEC 2025 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.2)  4 DEC 2025 00:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
 \c@section=\count276
@@ -575,23 +575,25 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 66
 (C:\Program Files\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 7362) in paragraph at lines 128--152
-\OT1/ptm/m/n/10.95 (+20) Tats[]achlich ist genau diese Effizienz- und
+<images/sec_scal_spd_diagram_v3.png, id=3, 1107.38719pt x 660.96938pt>
+File: images/sec_scal_spd_diagram_v3.png Graphic file (type png)
+<use images/sec_scal_spd_diagram_v3.png>
+Package pdftex.def Info: images/sec_scal_spd_diagram_v3.png  used on input line
+ 152.
+(pdftex.def)             Requested size: 227.62204pt x 135.85258pt.
+
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 152--154
+[][] 
  []
 
-
-Underfull \hbox (badness 2261) in paragraph at lines 128--152
-\OT1/ptm/m/n/10.95 (+20) Flex-i-bilit[]atsan-forderung die Haup-tur-sache der
- []
-
-<images/basic_bgp_route_announcements.jpg, id=3, 1204.5pt x 542.025pt>
+<images/basic_bgp_route_announcements.jpg, id=5, 1204.5pt x 542.025pt>
 File: images/basic_bgp_route_announcements.jpg Graphic file (type jpg)
 <use images/basic_bgp_route_announcements.jpg>
 Package pdftex.def Info: images/basic_bgp_route_announcements.jpg  used on inpu
-t line 170.
+t line 181.
 (pdftex.def)             Requested size: 227.62204pt x 102.42342pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 170--171
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 181--182
 [][] 
  []
 
@@ -600,281 +602,150 @@ iles/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 
-]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 214.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 214.
+ <./images/sec_scal_spd_diagram_v3.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 214.
-<images/prefix_specific_hijack.png, id=16, 1204.5pt x 542.025pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 238.
+<images/prefix_specific_hijack.png, id=20, 1204.5pt x 542.025pt>
 File: images/prefix_specific_hijack.png Graphic file (type png)
 <use images/prefix_specific_hijack.png>
 Package pdftex.def Info: images/prefix_specific_hijack.png  used on input line 
-226.
+250.
 (pdftex.def)             Requested size: 227.62204pt x 102.42342pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 226--227
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 250--251
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--231
+Underfull \hbox (badness 10000) in paragraph at lines 224--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--231
+Underfull \hbox (badness 10000) in paragraph at lines 224--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--231
+Underfull \hbox (badness 10000) in paragraph at lines 224--255
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--255
+
+ []
+
+<images/path_hijack.png, id=21, 1204.5pt x 542.025pt>
+File: images/path_hijack.png Graphic file (type png)
+<use images/path_hijack.png>
+Package pdftex.def Info: images/path_hijack.png  used on input line 317.
+(pdftex.def)             Requested size: 227.62204pt x 102.42342pt.
+
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 317--318
+[][] 
  []
 
 [2 <./images/basic_bgp_route_announcements.jpg> <./images/prefix_specific_hijac
 k.png>]
-<images/path_hijack.png, id=30, 1204.5pt x 542.025pt>
-File: images/path_hijack.png Graphic file (type png)
-<use images/path_hijack.png>
-Package pdftex.def Info: images/path_hijack.png  used on input line 293.
-(pdftex.def)             Requested size: 227.62204pt x 102.42342pt.
+Underfull \hbox (badness 10000) in paragraph at lines 338--351
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 293--294
-[][] 
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 299--312
-\OT1/ptm/m/n/10.95 (+20) greifer aber auch die M[]oglichkeit die Pakete
- []
-
-
-Underfull \hbox (badness 2221) in paragraph at lines 314--327
-\OT1/ptm/m/n/10.95 (+20) In diesem Kapi-tel wer-den wir den genauen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--327
-\OT1/ptm/m/n/10.95 (+20) zeitlichen Ablauf eines echten Vor-falls
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--327
-
+Underfull \hbox (badness 3930) in paragraph at lines 338--351
+\OT1/ptm/m/n/10 (+20) Es han-delt sich um einen Ver-such der Zen-sur
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 327.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 351.
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
 [][][][][]$\OT1/cmtt/m/n/9 https : / / www . ripe . net / about-[]us / news /
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-31.
+57.
 (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 1831) in paragraph at lines 332--334
-\OT1/ptm/m/n/10.95 (+20) ary 2008: AS36561 (YouTube) an-nounces
- []
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 334--339
-[]\OT1/ptm/m/n/10.95 (+20) Sunday, 24 Febru-ary 2008, 18:47 (UTC):
- []
-
-
-Underfull \hbox (badness 7308) in paragraph at lines 334--339
-\OT1/ptm/m/n/10.95 (+20) ing the more spe-cific ad-dress space of
- []
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 339--345
-[]\OT1/ptm/m/n/10.95 (+20) Sunday, 24 Febru-ary 2008, 20:07 (UTC):
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--345
-\OT1/ptm/m/n/10.95 (+20) AS36561 (YouTube) starts an-nounc-ing
- []
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 345--349
-[]\OT1/ptm/m/n/10.95 (+20) Sunday, 24 Febru-ary 2008, 20:18 (UTC):
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--349
-\OT1/ptm/m/n/10.95 (+20) AS36561 (YouTube) starts an-nounc-ing
- []
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 359--362
-[]\OT1/ptm/m/n/10.95 (+20) Sunday, 24 Febru-ary 2008, 21:01 (UTC):
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) Die Sicher-heits-ma^^Y-nah-men lassen sich im
- []
-
-
-Underfull \hbox (badness 3612) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) Wesentlichen in zwei Kat-e-gorien un-terteilen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
+Underfull \hbox (badness 10000) in paragraph at lines 392--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
-\OT1/ptm/b/n/10.95 (+20) RPKI (Re-source Pub-lic Key In-fras-truc-
+Underfull \hbox (badness 1325) in paragraph at lines 392--477
+\OT1/ptm/m/n/10 (+20) RPKI ist ein kryp-tografis-ches Ver-fahren, das der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
-
+Underfull \hbox (badness 1783) in paragraph at lines 392--477
+\OT1/ptm/m/n/10 (+20) Dabei wer-den Kom-bi-na-tio-nen von AS Num-mern
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) \   AS[]Path" in den An-nounce-ments durch das
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
+Underfull \hbox (badness 10000) in paragraph at lines 392--477
 
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) auch aus-ge-hende An-nounce-ments angewen-det
- []
-
-
-Underfull \hbox (badness 2111) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) Ports er-warten und entsprechend akzep-tieren.
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) um beispiel-sweise fehler-hafte An-nounce-ments
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) durch (verse-hentliche) Miskon-fig-u-ra-tio-nen
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) zu ver-mei-den. Im Ide-al-fall fil-tern alle ISPs
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
+Underfull \hbox (badness 10000) in paragraph at lines 392--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--451
-\OT1/ptm/m/n/10.95 (+20) tung von Ver[]anderun-gen im gew[]ohn-lichen
+Underfull \hbox (badness 6859) in paragraph at lines 392--477
+\OT1/ptm/m/n/10 (+20) aus-ge-hende An-nounce-ments angewen-det wer-den.
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 392--477
+\OT1/ptm/m/n/10 (+20) k[]onnen von der In-ter-net Rout-ing Reg-istry (IRR)
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 392--477
+\OT1/ptm/m/n/10 (+20) fehler-hafte An-nounce-ments durch (verse-hentliche)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--477
+
  []
 
 [3 <./images/path_hijack.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) Ein Beispiel hi-erf[]ur w[]are die pl[]otzliche
+Underfull \hbox (badness 1902) in paragraph at lines 478--562
+\OT1/ptm/m/n/10 (+20) gro^^Yen Adress-raum mit vie-len, sehr spez-i-fis-chen
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) M[]oglicher-weise han-delt es sich nur um den
+Underfull \hbox (badness 2735) in paragraph at lines 478--562
+\OT1/ptm/m/n/10 (+20) An-nounce-ments mit lan-gen Pr[]afixen []ubernehmen
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) sehr spez-i-fis-chen An-nounce-ments mit lan-gen
- []
-
-
-Underfull \hbox (badness 2735) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) Um-leitung be-trof-fe-nen pre-fixes helfen([][]B[]uhle
-r
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) gehi-jack-ten Teil des Adress-raumes gesendet
- []
-
-
-Underfull \hbox (badness 3068) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) wer-den eine h[]ohere Latenz beziehungsweise
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--536
+Underfull \hbox (badness 10000) in paragraph at lines 478--562
 
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) Wie in vie-len an-deren tech-nis-chen Bere-ichen
+Underfull \hbox (badness 1389) in paragraph at lines 478--562
+\OT1/ptm/m/n/10 (+20) nen auch bei der Anoma-lieerken-nung KI-basierte
  []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) gewin-nen auch bei der Anoma-lieerken-nung
+Underfull \hbox (badness 1688) in paragraph at lines 478--562
+\OT1/ptm/m/n/10 (+20) das in An-lehnung an Word2Vec AP2Vec([][]Shapira
  []
 
 
-Underfull \hbox (badness 6300) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) gen zwis-chen ih-nen die Kan-ten darstellen.
+Underfull \hbox (badness 2735) in paragraph at lines 478--562
+\OT1/ptm/m/n/10 (+20) dies bei einer regul[]aren Routen[]anderung nor-mal
  []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) Entsprechend gut lassen sich Graphen-basierte
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) Ein al-ter-na-tiver Ansatz ist ein NLP-basiertes
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) Ver-fahren, das in An-lehnung an Word2Vec
- []
-
-
-Underfull \hbox (badness 6658) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) AP2Vec([][]Shapira and Shavitt[][], [][]2022[][]) geta
-uft
- []
-
-
-Underfull \hbox (badness 1789) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) eines An-griffs st[]arker ver[]andert als dies bei
- []
-
-
-Underfull \hbox (badness 4505) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) dieser S[]atze kann dann da-rauf geschlossen
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 452--536
-\OT1/ptm/m/n/10.95 (+20) wer-den, ob es sich bei dem gegebe-nen Satz
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -885,7 +756,7 @@ Underfull \hbox (badness 1210) in paragraph at lines 35--41
 []\OT1/ptm/m/n/10 (+20) Kevin Hoa-rau, Pierre Ugo Tournoux, and Tahiry
  []
 
-[5]
+
 Underfull \hbox (badness 2828) in paragraph at lines 84--89
 []\OT1/ptm/m/n/10 (+20) Wikipedia. 2024.  [][]Exterior-gateway-protokoll ---
  []
@@ -895,9 +766,12 @@ Underfull \hbox (badness 3058) in paragraph at lines 91--96
 []\OT1/ptm/m/n/10 (+20) Wikipedia. 2025.  [][]Bor-der gate-way pro-to-col ---
  []
 
-) [6
+) [5] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux
 
-] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -907,13 +781,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  )
 (\end occurred when \ifx on line 9 was incomplete) 
 Here is how much of TeX's memory you used:
- 16115 strings out of 467871
- 261975 string characters out of 5428446
- 744753 words of memory out of 5000000
- 44431 multiletter control sequences out of 15000+600000
- 679688 words of font info for 310 fonts, out of 8000000 for 9000
+ 16064 strings out of 467871
+ 261884 string characters out of 5428446
+ 745806 words of memory out of 5000000
+ 44441 multiletter control sequences out of 15000+600000
+ 673210 words of font info for 266 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,14n,93p,1003b,657s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,14n,93p,1003b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/font
 s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
@@ -922,9 +796,9 @@ cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb
 KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/
 times/utmri8a.pfb>
 Output written on "C:/Users\Mark\Desktop\git projects\snag_paper\out\main.pdf" 
-(6 pages, 356367 bytes).
+(5 pages, 431359 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 78864 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 70677 words of extra memory for PDF output out of 74296 (max. 10000000)
 

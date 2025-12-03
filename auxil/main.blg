@@ -12,45 +12,45 @@ Database file #1: bibtest.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Warning--empty journal in buehler:2023
 Warning--missing institution in lepinski2017bgpsec
-You've used 12 entries,
+You've used 13 entries,
             3571 wiz_defined-function locations,
-            762 strings with 8427 characters,
-and the built_in function-call counts, 8820 in all, are:
-= -- 769
-> -- 441
-< -- 9
-+ -- 141
-- -- 129
-* -- 576
-:= -- 1360
-add.period$ -- 55
-call.type$ -- 12
-change.case$ -- 120
-chr.to.int$ -- 12
-cite$ -- 14
-duplicate$ -- 561
-empty$ -- 615
-format.name$ -- 161
-if$ -- 1939
-int.to.chr$ -- 1
+            765 strings with 8571 characters,
+and the built_in function-call counts, 9298 in all, are:
+= -- 814
+> -- 453
+< -- 12
++ -- 146
+- -- 132
+* -- 600
+:= -- 1438
+add.period$ -- 59
+call.type$ -- 13
+change.case$ -- 127
+chr.to.int$ -- 14
+cite$ -- 15
+duplicate$ -- 591
+empty$ -- 654
+format.name$ -- 165
+if$ -- 2048
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 118
-newline$ -- 69
-num.names$ -- 48
-pop$ -- 242
+missing$ -- 123
+newline$ -- 74
+num.names$ -- 52
+pop$ -- 252
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 95
 quote$ -- 0
-skip$ -- 421
+skip$ -- 450
 stack$ -- 0
-substring$ -- 301
-swap$ -- 289
+substring$ -- 316
+swap$ -- 302
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
+type$ -- 117
 warning$ -- 2
-while$ -- 48
+while$ -- 51
 width$ -- 0
-write$ -- 164
+write$ -- 176
 (There were 2 warnings)

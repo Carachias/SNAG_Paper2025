@@ -2,7 +2,7 @@
 %! Date = 05.11.2025
 
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage{authblk}
 \usepackage[hyperref]{templates/acl2021}
 % \usepackage{times} % superseded by:
@@ -140,12 +140,23 @@ Was in kleinen Netzwerken möglicherweise noch vertretbare Aufwände sind, kann 
 sehr großen Netzwerk oder gar dem globalen Internet sehr schnell zu einem
 unüberwindbaren Hindernis werden.
 %
-Sicherheit und Effizienz/ Geschwindigkeit sind in der Praxis oft zwei Anforderungen, die
-nur schwer gleichzeitig erfüllbar sind.
+Sicherheit, Effizienz und Geschwindigkeit sind in der Praxis oft Anforderungen, die nur
+schwer gleichzeitig erfüllbar sind.
 %
 Entsprechend waren in der \enquote{Basisversion} des BGP so gut wie keine
 nennenswerten Sicherheitsmechanismen integriert, da diese der
 Geschwindigkeitsanforderung an das Protokoll im Wege stehen würden.
+%
+\begin{figure}[!h]
+%\centering
+\includegraphics[width=0.5\textwidth]{images/sec_scal_spd_diagram_v3}
+\caption{Pure BGP vs. BGP with additional security measures (Graph Scale more
+arbitrary than exact)}
+\label{fig:BGP vs BGP with sec measures}
+\end{figure}
+%
+\par
+\noindent
 %
 %
 %
@@ -195,6 +206,19 @@ oder Netzwerken (DOS Angriffe) bis hin zu staatlich organisierter Spionage.
 %
 \section{Typen und Ablauf eines Angriffs}
 %
+Manche Quellen teilen BGP Hijacking incidents grob in die Kategorien
+\enquote{Prefix Hijacks} und \enquote{Path Hijacks} ein, während andere Quellen diese
+Unterscheidung nicht vornehmen und allgemein von \enquote{BGP Hijacks} sprechen.
+%
+Letztere verstehen unter Prefix- und Path Hijacking eher zwei
+Vorgehensweisen, die nicht selten in Kombination miteinander eingesetzt werden, falls
+eine Methode alleine nicht zum Ziel führt.
+%
+Das ist zum Beispiel der Fall, wenn zwei ASes den gleichen Prefix announcen.
+%
+Dann ist die Länge des Pfades zu dem Adressraum ein tie-breaker, den der Angreifer
+gegebenenfalls zusätzlich manipulieren muss, um sein Ziel zu erreichen.
+%
 \subsection{Spezifischeren Adressraum announcen}
 %
 Generell bevorzugen Router bei der Erstellung ihrer Routingtabellen möglichst präzise
@@ -203,8 +227,8 @@ Announcements.
 Ein Announcement wird immer dann präziser, wenn der Prefix in der CIDR Notation länger
 , also die Zahl nach dem \enquote{\slash} größer wird.
 %
-\newpage
-\noindent
+\newline
+\newline
 %
 \textbf{Beispiel:}
 %
@@ -325,6 +349,8 @@ unbeabsichtigt eskalierte und dabei über die Landesgrenzen von Pakistan hinaus
 Einfluss auf die Verfügbarkeit der Webseite hatte.
 %
 \paragraph{Pakistan Telecom taking down YouTube}\footnote{\url{https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/}}
+%
+\newline
 %
 Event Timeline:
 %

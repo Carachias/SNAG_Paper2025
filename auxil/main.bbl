@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Antony et~al.(2008)Antony, Karrenberg, Kisteleki, Refice, and
@@ -94,8 +94,15 @@ Wikipedia. 2025.
   {Border gateway protocol --- wikipedia{,} die freie enzyklopädie}.
 \newblock [Online; Stand 3. Dezember 2025].
 
-\bibitem[{{Wikipedia contributors}(2025)}]{enwiki:1317712446}
-{Wikipedia contributors}. 2025.
+\bibitem[{{Wikipedia contributors}(2025{\natexlab{a}})}]{enwiki:1321790712}
+{Wikipedia contributors}. 2025{\natexlab{a}}.
+\newblock \href
+  {https://en.wikipedia.org/w/index.php?title=BGP_hijacking&oldid=1321790712}
+  {Bgp hijacking --- {Wikipedia}{,} the free encyclopedia}.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{{Wikipedia contributors}(2025{\natexlab{b}})}]{enwiki:1317712446}
+{Wikipedia contributors}. 2025{\natexlab{b}}.
 \newblock \href
   {https://en.wikipedia.org/w/index.php?title=Resource_Public_Key_Infrastructure&oldid=1317712446}
   {Resource public key infrastructure --- {Wikipedia}{,} the free
