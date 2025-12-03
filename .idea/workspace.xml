@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="-remove unnecessary files">
+    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="- add more and better sources to .bib file and add them to the new reference section&#10;- comment out the old placeholder reference section&#10;- add placeholder for a paragraph about AI-based anomaly detection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.blg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibtest.bib" beforeDir="false" afterPath="$PROJECT_DIR$/bibtest.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/main.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
@@ -113,6 +110,15 @@
     </recent_temporary>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="- add more and better sources to .bib file and add them to the new reference section&#10;- comment out the old placeholder reference section&#10;- add placeholder for a paragraph about AI-based anomaly detection">
+      <option name="closed" value="true" />
+      <created>1764729757496</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764729757496</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,17 +129,17 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="origin/master" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="master" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="HEAD" />
                 </option>
               </RecentGroup>
             </list>
@@ -144,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-remove unnecessary files" />
-    <option name="LAST_COMMIT_MESSAGE" value="-remove unnecessary files" />
+    <MESSAGE value="- add more and better sources to .bib file and add them to the new reference section&#10;- comment out the old placeholder reference section&#10;- add placeholder for a paragraph about AI-based anomaly detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add more and better sources to .bib file and add them to the new reference section&#10;- comment out the old placeholder reference section&#10;- add placeholder for a paragraph about AI-based anomaly detection" />
   </component>
 </project>

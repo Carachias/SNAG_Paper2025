@@ -363,6 +363,23 @@ Event Timeline:
 %
 \section{Sicherheitsmaßnahmen}
 %
+Die Sicherheitsmaßnahmen lassen sich im Wesentlichen in zwei Kategorien unterteilen
+\citep{shapira2022ap2vec}.
+%
+Zum einen gibt es die präventiven Maßnahmen, die verhindern sollen, dass es überhaupt
+zu Hijacks und Route Leaks kommt.
+%
+Zu diesen Methoden gehören RPKI, BGPSec und RouteFiltering.
+%
+Die zweite Kategorie beinhaltet die Maßnahmen, die der Erkennung von Hijacks dienen,
+sobald diese auftreten.
+%
+In dieser Kategorie befinden sich Verfahren, die sich mit dem Monitoring und der
+Anomalieerkennung beschäftigen.
+%
+\newline
+\newline
+%
 \textbf{RPKI (Resource Public Key Infrastructure)}
 %
 \newline
@@ -468,105 +485,87 @@ spezifischen Announcements mit langen Präfixen übernehmen möchte.
 %
 Um bösartige Angriffe von \enquote{normalen} Vorfällen zu unterscheiden, kann eine
 Analyse der von einer Umleitung betroffenen prefixes
-helfen\citep{buehler:2023}
+helfen\citep{buehler:2023}.
+%
+Die meisten ASes announcen mehrere Prefixes wodurch im Falle eines gewöhnlichen
+technischen Defektes auch der Traffic für all diese Prefixe umgeleitet wird.
+%
+Gezielte Angriffe konzentrieren sich aber oft nur auf ein Subset der Prefixes eines
+ASes, wodurch letztendlich auch nur das entsprechende Subset an Traffic umgeleitet wird,
+während der Traffic der nicht betroffenen Prefixes weiterhin die übliche Route nimmt.
+%
+Ein solcher Angriff lässt sich dann möglicherweise daran erkennen, dass die Pakete, die
+an einen gehijackten Teil des Adressraumes gesendet werden eine höhere Latenz
+beziehungsweise Round Trip Time haben.
 %
 \newline
 \newline
 %
 \textbf{KI-Basierte Anomalieerkennung}
 %
+\newline
+%
+Wie in vielen anderen technischen Bereichen gewinnen auch bei der Anomalieerkennung
+KI-basierte Methoden zunehmend an Bedeutung.
+%
+Das Internet entspricht einem Graphen, bei dem die (BGP) Router die Knoten und die
+Verbindungen zwischen ihnen die Kanten darstellen.
+%
+Entsprechend gut lassen sich Graphenbasierte Machine Learning Architekturen auf das
+Problem anwenden\citep{hoarau2021suitability}.
+%
+\newline
+%
+Ein alternativer Ansatz ist ein NLP-basiertes Verfahren, das in Anlehnung an Word2Vec
+AP2Vec\citep{shapira2022ap2vec} getauft wurde.
+%
+Es basiert auf der Annahme, dass ASes verschiedene Rollen wie tier-1 oder tier-2
+Provider oder auch cloud Provider besitzen und sich die Verteilung der Rollen auf
+einer Route im Falle eines Angriffs stärker verändert als dies bei einer regulären
+Routenänderung normal ist.
+%
+Das Verfahren betrachtet die Routen als Sätze deren Wörter den Rollen der ASes
+auf den jeweiligen Ruten entsprechen.
+%
+Aufgrund des Embeddings dieser Sätze kann dann darauf geschlossen werden, ob es sich
+bei dem gegebenen Satz beziehungsweise der entsprechenden Route um einen Hijack
+handelt oder nicht.
+%
+%
+%
 \section{Conclusion}
 %
+Das BGP ist das Protokoll, das unser modernes Internet zusammenhält und daran wird
+sich auf absehbare Zeit auch nichts ändern.
 %
+Aufgrund seiner Bedeutsamkeit und der scheinbar unaufhörlich wachsenden Größe des
+Internets wird das Protokoll entsprechend auch in Zukunft ein lukratives Ziel für
+Angreifer bleiben.
 %
-%\section{Selfmade References}
+\newline
 %
-%Wikipedia Eintrag zum BGP:
+Obwohl BGP allein ein äußerst anfälliges Protokoll ist, gibt es mittlerweile sehr
+effektive Präventionsmaßnahmen wie RPKI, BGPsec und RouteFiltering.
 %
-%\newline
+Bedauerlicherweise scheitert es aber in der Praxis häufig an der Implementierung und
+Anwendung dieser Maßnahmen.
 %
-%\href{https://de.wikipedia.org/wiki/Border_Gateway_Protocol?useskin=vector}
-%{wikipedia.org/wiki/Border\_Gateway\_Protocol}
+Die Gründe dafür reichen von mangelnden Kenntnissen und Fähigkeiten der
+Administratoren bis hin zu finanziellen Überlegungen der Netzwerkbetreiber.
 %
-%\newline
-%\newline
+Während mangelnde Fachkenntnisse durch gezielte Schulungen von Administratoren und
+Betreibern behoben werden können, lässt sich der finanzielle Aspekt nur schwer
+eliminieren.
 %
-%Wikipedia Eintrag zum EGP:
+Die letzte und vielleicht einzige Möglichkeit besonders kostenoptimiert arbeitenden
+Betreibern zu begegnen wäre das Schaffen eines gesetzlichen Rahmens, der fahrlässiges
+Handeln unter so hohe Strafen stellt, dass die Implementierung von
+Sicherheitsmaßnahmen die günstigere Option ist.
 %
-%\newline
-%
-%\href{https://de.wikipedia.org/wiki/Exterior-Gateway-Protokoll?useskin=vector}
-%{wikipedia.org/wiki/Exterior-Gateway-Protokoll}
-%
-%\newline
-%\newline
-%
-%Mehr Basiswissen zum BGP:
-%
-%\newline
-%
-%\href{https://www.linkedin.com/pulse/understanding-bgp-its-advantages-over-egp-role-peter
-%-smulovics-kvrae}{linkedin.com/pulse/understanding-bgp}
-%
-%\newline
-%\newline
-%
-%Basiswissen BGP Hijacking:
-%
-%\newline
-%
-%\href{https://www.catchpoint.com/bgp-monitoring/bgp-hijacking}
-%{catchpoint.com/bgp-monitoring/bgp-hijacking}
-%
-%\newline
-%\newline
-%
-%Youtube Hijacking Incident:
-%
-%\newline
-%
-%\href{https://research.google/pubs/youtube-hijacking-february-24th-2008-analysis-of-bgp
-%-routing-dynamics/}
-%{research.google/pubs/youtube-hijacking}
-%
-%\newline
-%\newline
-%
-%\href{https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/}
-%{ripe.net/about-us/news/youtube-hijacking}
-%
-%\newline
-%\newline
-%
-%Basiswissen RPKI:
-%
-%\newline
-%
-%\href{https://www.lancom-systems.de/docs/LCOS/Refmanual/DE/topics/bgp-rpki.html}
-%{lancom-systems.de/docs/LCOS/Refmanual/DE/topics/bgp-rpki}
-%
-%\newline
-%\newline
-%
-%Basiswissen BGPsec:
-%
-%\newline
-%
-%\href{https://en.wikipedia.org/wiki/BGPsec?useskin=vector}
-%{wikipedia.org/wiki/BGPsec}
-%
-%\newline
-%\newline
-%
-%Basiswissen Route Filtering:
-%
-%\newline
-%
-%\href{https://www.noction.com/knowledge-base/bgp-filtering}
-%{noction.com/knowledge-base/bgp-filtering}
-%
-%\newpage
-%\noindent
+Solche Gesetze international zu erlassen und anschließend auch durchzusetzen ist aber
+schier unmöglich, insbesondere da einige Staaten beispielsweise zwecks Spionage oder
+Zensur auch gar kein Interesse an der vollständigen Schließung sämtlicher
+Sicherheitslücken haben.
 %
 %
 %
