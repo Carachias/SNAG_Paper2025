@@ -1,5 +1,14 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{12}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Antony et~al.(2008)Antony, Karrenberg, Kisteleki, Refice, and
+  Wilhelm}]{youtubehijack:2008}
+Antony Antony, Daniel Karrenberg, Robert Kisteleki, Tiziana Refice, and Rene
+  Wilhelm. 2008.
+\newblock \href
+  {https://research.google/pubs/youtube-hijacking-february-24th-2008-analysis-of-bgp-routing-dynamics/}
+  {Youtube hijacking (february 24th 2008) analysis of bgp routing dynamics}.
+\newblock [Online; accessed 3-December-2025].
 
 \bibitem[{Bühler et~al.(2023)Bühler, Milolidakis, Jacob, Chiesa, Vissicchio,
   and Vanbever}]{buehler:2023}
@@ -7,5 +16,90 @@ Tobias Bühler, Alexandros Milolidakis, Romain Jacob, Marco Chiesa, Stefano
   Vissicchio, and Laurent Vanbever. 2023.
 \newblock \href {http://arxiv.org/abs/2301.12843} {Oscilloscope: Detecting bgp
   hijacks in the data plane}.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Chung et~al.(2019)Chung, Aben, Bruijnzeels, Chandrasekaran, Choffnes,
+  Levin, Maggs, Mislove, Rijswijk-Deij, Rula et~al.}]{chung2019rpki}
+Taejoong Chung, Emile Aben, Tim Bruijnzeels, Balakrishnan Chandrasekaran, David
+  Choffnes, Dave Levin, Bruce~M Maggs, Alan Mislove, Roland~van Rijswijk-Deij,
+  John Rula, et~al. 2019.
+\newblock \href {https://dl.acm.org/doi/pdf/10.1145/3355369.3355596} {Rpki is
+  coming of age: A longitudinal study of rpki deployment and invalid route
+  origins}.
+\newblock In \emph{Proceedings of the Internet Measurement Conference}, pages
+  406--419.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Hoarau et~al.(2021)Hoarau, Tournoux, and
+  Razafindralambo}]{hoarau2021suitability}
+Kevin Hoarau, Pierre~Ugo Tournoux, and Tahiry Razafindralambo. 2021.
+\newblock \href {https://hal.science/hal-03398624v1/file/Suitability.pdf}
+  {Suitability of graph representation for bgp anomaly detection}.
+\newblock In \emph{2021 IEEE 46th Conference on Local Computer Networks (LCN)},
+  pages 305--310. IEEE.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Jaw et~al.(2024)Jaw, M{\"u}ller, Hesselman, and
+  Nieuwenhuis}]{jaw2024serial}
+Ebrima Jaw, Moritz M{\"u}ller, Cristian Hesselman, and Lambert Nieuwenhuis.
+  2024.
+\newblock \href
+  {https://ris.utwente.nl/ws/portalfiles/portal/454762901/Serial_BGP_Hijackers_A_Reproducibility_Study_and_Assessment_of_Current_Dynamics.pdf}
+  {Serial bgp hijackers: A reproducibility study and assessment of current
+  dynamics}.
+\newblock In \emph{2024 8th Network Traffic Measurement and Analysis Conference
+  (TMA)}, pages 1--10. IEEE.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Lepinski and Sriram(2017)}]{lepinski2017bgpsec}
+Matt Lepinski and Kotikalapudi Sriram. 2017.
+\newblock \href {https://www.rfc-editor.org/rfc/rfc8205.html} {Bgpsec protocol
+  specification}.
+\newblock Technical report.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Milolidakis et~al.(2023)Milolidakis, Bühler, Wang, Chiesa, Vanbever,
+  and Vissicchio}]{hijack_frequencies10078883}
+Alexandros Milolidakis, Tobias Bühler, Kunyu Wang, Marco Chiesa, Laurent
+  Vanbever, and Stefano Vissicchio. 2023.
+\newblock \href {https://doi.org/10.1109/ACCESS.2023.3261128} {On the
+  effectiveness of bgp hijackers that evade public route collectors}.
+\newblock \emph{IEEE Access}, 11:31092--31124.
+
+\bibitem[{RIS(2008)}]{ripe:2008}
+RIPE~NCC RIS. 2008.
+\newblock \href
+  {https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/}
+  {Youtube hijacking: A ripe ncc ris case study}.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Shapira and Shavitt(2022)}]{shapira2022ap2vec}
+Tal Shapira and Yuval Shavitt. 2022.
+\newblock Ap2vec: an unsupervised approach for bgp hijacking detection.
+\newblock \emph{IEEE Transactions on Network and Service Management},
+  19(3):2255--2268.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Wikipedia(2024)}]{dewiki:241402194}
+Wikipedia. 2024.
+\newblock \href
+  {https://de.wikipedia.org/w/index.php?title=Exterior-Gateway-Protokoll&oldid=241402194}
+  {Exterior-gateway-protokoll --- wikipedia{,} die freie enzyklopädie}.
+\newblock [Online; Stand 3. Dezember 2025].
+
+\bibitem[{Wikipedia(2025)}]{dewiki:258392754}
+Wikipedia. 2025.
+\newblock \href
+  {https://de.wikipedia.org/w/index.php?title=Border_Gateway_Protocol&oldid=258392754}
+  {Border gateway protocol --- wikipedia{,} die freie enzyklopädie}.
+\newblock [Online; Stand 3. Dezember 2025].
+
+\bibitem[{{Wikipedia contributors}(2025)}]{enwiki:1317712446}
+{Wikipedia contributors}. 2025.
+\newblock \href
+  {https://en.wikipedia.org/w/index.php?title=Resource_Public_Key_Infrastructure&oldid=1317712446}
+  {Resource public key infrastructure --- {Wikipedia}{,} the free
+  encyclopedia}.
+\newblock [Online; accessed 3-December-2025].
 
 \end{thebibliography}
