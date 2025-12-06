@@ -10,47 +10,44 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: bibtest.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Warning--empty journal in buehler:2023
-Warning--missing institution in lepinski2017bgpsec
-You've used 13 entries,
+You've used 22 entries,
             3571 wiz_defined-function locations,
-            765 strings with 8571 characters,
-and the built_in function-call counts, 9298 in all, are:
-= -- 814
-> -- 453
+            845 strings with 11602 characters,
+and the built_in function-call counts, 18419 in all, are:
+= -- 1591
+> -- 961
 < -- 12
-+ -- 146
-- -- 132
-* -- 600
-:= -- 1438
-add.period$ -- 59
-call.type$ -- 13
-change.case$ -- 127
-chr.to.int$ -- 14
-cite$ -- 15
-duplicate$ -- 591
-empty$ -- 654
-format.name$ -- 165
-if$ -- 2048
++ -- 315
+- -- 282
+* -- 1282
+:= -- 2721
+add.period$ -- 112
+call.type$ -- 22
+change.case$ -- 241
+chr.to.int$ -- 23
+cite$ -- 22
+duplicate$ -- 1193
+empty$ -- 1287
+format.name$ -- 350
+if$ -- 4043
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 123
-newline$ -- 74
-num.names$ -- 52
-pop$ -- 252
+missing$ -- 261
+newline$ -- 134
+num.names$ -- 88
+pop$ -- 497
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 181
 quote$ -- 0
-skip$ -- 450
+skip$ -- 829
 stack$ -- 0
-substring$ -- 316
-swap$ -- 302
-text.length$ -- 3
+substring$ -- 673
+swap$ -- 665
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 117
-warning$ -- 2
-while$ -- 51
+type$ -- 198
+warning$ -- 0
+while$ -- 97
 width$ -- 0
-write$ -- 176
-(There were 2 warnings)
+write$ -- 330

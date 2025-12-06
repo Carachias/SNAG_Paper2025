@@ -1,5 +1,13 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{22}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Al-Musawi et~al.(2016)Al-Musawi, Branch, and
+  Armitage}]{Musawi_survey:2016}
+Bahaa Al-Musawi, Philip Branch, and Grenville Armitage. 2016.
+\newblock \href {https://doi.org/10.1109/COMST.2016.2622240} {Bgp anomaly
+  detection techniques: A survey}.
+\newblock \emph{IEEE Communications Surveys and Tutorials}, PP:1--1.
+\newblock [Online; accessed 5-December-2025].
 
 \bibitem[{Antony et~al.(2008)Antony, Karrenberg, Kisteleki, Refice, and
   Wilhelm}]{youtubehijack:2008}
@@ -10,12 +18,22 @@ Antony Antony, Daniel Karrenberg, Robert Kisteleki, Tiziana Refice, and Rene
   {Youtube hijacking (february 24th 2008) analysis of bgp routing dynamics}.
 \newblock [Online; accessed 3-December-2025].
 
+\bibitem[{Apostolaki et~al.(2017)Apostolaki, Zohar, and
+  Vanbever}]{apostolaki2017hijacking}
+Maria Apostolaki, Aviv Zohar, and Laurent Vanbever. 2017.
+\newblock \href {https://arxiv.org/pdf/1605.07524} {Hijacking bitcoin: Routing
+  attacks on cryptocurrencies}.
+\newblock In \emph{2017 IEEE symposium on security and privacy (SP)}, pages
+  375--392. IEEE.
+\newblock [Online; accessed 5-December-2025].
+
 \bibitem[{Bühler et~al.(2023)Bühler, Milolidakis, Jacob, Chiesa, Vissicchio,
   and Vanbever}]{buehler:2023}
 Tobias Bühler, Alexandros Milolidakis, Romain Jacob, Marco Chiesa, Stefano
   Vissicchio, and Laurent Vanbever. 2023.
 \newblock \href {http://arxiv.org/abs/2301.12843} {Oscilloscope: Detecting bgp
   hijacks in the data plane}.
+\newblock \emph{arXiv preprint arXiv:2301.12843}.
 \newblock [Online; accessed 3-December-2025].
 
 \bibitem[{Chung et~al.(2019)Chung, Aben, Bruijnzeels, Chandrasekaran, Choffnes,
@@ -39,6 +57,18 @@ Kevin Hoarau, Pierre~Ugo Tournoux, and Tahiry Razafindralambo. 2021.
   pages 305--310. IEEE.
 \newblock [Online; accessed 3-December-2025].
 
+\bibitem[{Holterbach et~al.(2024)Holterbach, Alfroy, Phokeer, Dainotti, and
+  Pelsser}]{Holterbach:295685}
+Thomas Holterbach, Thomas Alfroy, Amreesh Phokeer, Alberto Dainotti, and
+  Cristel Pelsser. 2024.
+\newblock \href
+  {https://www.usenix.org/conference/nsdi24/presentation/holterbach} {A system
+  to detect {Forged-Origin} {BGP} hijacks}.
+\newblock In \emph{21st USENIX Symposium on Networked Systems Design and
+  Implementation (NSDI 24)}, pages 1751--1770, Santa Clara, CA. USENIX
+  Association.
+\newblock [Online; accessed 5-December-2025].
+
 \bibitem[{Jaw et~al.(2024)Jaw, M{\"u}ller, Hesselman, and
   Nieuwenhuis}]{jaw2024serial}
 Ebrima Jaw, Moritz M{\"u}ller, Cristian Hesselman, and Lambert Nieuwenhuis.
@@ -51,12 +81,44 @@ Ebrima Jaw, Moritz M{\"u}ller, Cristian Hesselman, and Lambert Nieuwenhuis.
   (TMA)}, pages 1--10. IEEE.
 \newblock [Online; accessed 3-December-2025].
 
+\bibitem[{Kent et~al.(2002)Kent, Lynn, and Seo}]{kent2002secure}
+Stephen Kent, Charles Lynn, and Karen Seo. 2002.
+\newblock \href
+  {http://dpnm.postech.ac.kr/research/08/KT_BGP/BGP_Security/SecureBorderGatewayProtocol.pdf}
+  {Secure border gateway protocol (s-bgp)}.
+\newblock \emph{IEEE Journal on Selected areas in Communications},
+  18(4):582--592.
+\newblock [Online; accessed 5-December-2025].
+
+\bibitem[{Lepinski and Kent(2012)}]{lepinski2012infrastructure}
+Matt Lepinski and Stephen Kent. 2012.
+\newblock \href {https://www.rfc-editor.org/rfc/rfc6480.html} {An
+  infrastructure to support secure internet routing}.
+\newblock Technical report, IETF.
+\newblock [Online; accessed 5-December-2025].
+
 \bibitem[{Lepinski and Sriram(2017)}]{lepinski2017bgpsec}
 Matt Lepinski and Kotikalapudi Sriram. 2017.
 \newblock \href {https://www.rfc-editor.org/rfc/rfc8205.html} {Bgpsec protocol
   specification}.
-\newblock Technical report.
+\newblock Technical report, IETF.
 \newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Li et~al.(2018)Li, Liu, Hu, Xu, and Wu}]{li2018bgp}
+Qi~Li, Jiajia Liu, Yih-Chun Hu, Mingwei Xu, and Jianping Wu. 2018.
+\newblock \href {https://yihchun.com/papers/ieee-net-19.pdf} {Bgp with bgpsec:
+  Attacks and countermeasures}.
+\newblock \emph{IEEE Network}, 33(4):194--200.
+\newblock [Online; accessed 5-December-2025].
+
+\bibitem[{Matsumoto et~al.(2017)Matsumoto, Reischuk, Szalachowski, Kim, and
+  Perrig}]{matsumoto2017authentication}
+Stephanos Matsumoto, Raphael~M Reischuk, Pawel Szalachowski, Tiffany Hyun-Jin
+  Kim, and Adrian Perrig. 2017.
+\newblock \href {https://dl.acm.org/doi/pdf/10.1145/3007208} {Authentication
+  challenges in a global environment}.
+\newblock \emph{ACM Transactions on Privacy and Security (TOPS)}, 20(1):1--34.
+\newblock [Online; accessed 5-December-2025].
 
 \bibitem[{Milolidakis et~al.(2023)Milolidakis, Bühler, Wang, Chiesa, Vanbever,
   and Vissicchio}]{hijack_frequencies10078883}
@@ -65,6 +127,33 @@ Alexandros Milolidakis, Tobias Bühler, Kunyu Wang, Marco Chiesa, Laurent
 \newblock \href {https://doi.org/10.1109/ACCESS.2023.3261128} {On the
   effectiveness of bgp hijackers that evade public route collectors}.
 \newblock \emph{IEEE Access}, 11:31092--31124.
+\newblock [Online; accessed 3-December-2025].
+
+\bibitem[{Murphy(2006)}]{murphy2006bgp}
+Sandra Murphy. 2006.
+\newblock \href {https://www.rfc-editor.org/rfc/rfc4272} {Bgp security
+  vulnerabilities analysis}.
+\newblock Technical report, Network Working Group.
+\newblock [Online; accessed 5-December-2025].
+
+\bibitem[{Raynor et~al.(2022)Raynor, Crnovrsanin, Di~Bartolomeo, South, Saffo,
+  and Dunne}]{raynor2022state}
+Justin Raynor, Tarik Crnovrsanin, Sara Di~Bartolomeo, Laura South, David Saffo,
+  and Cody Dunne. 2022.
+\newblock \href
+  {https://www.researchgate.net/profile/Justin-Raynor/publication/363898023_The_State_of_the_Art_in_BGP_Visualization_Tools_A_Mapping_of_Visualization_Techniques_to_Cyberattack_Types/links/633d8632ff870c55ce0261f1/The-State-of-the-Art-in-BGP-Visualization-Tools-A-Mapping-of-Visualization-Techniques-to-Cyberattack-Types.pdf}
+  {The state of the art in bgp visualization tools: A mapping of visualization
+  techniques to cyberattack types}.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics},
+  29(1):1059--1069.
+\newblock [Online; accessed 5-December-2025].
+
+\bibitem[{Rekhter et~al.(2006)Rekhter, Li, and Hares}]{rekhter2006border}
+Yakov Rekhter, Tony Li, and Susan Hares. 2006.
+\newblock \href {https://www.rfc-editor.org/rfc/rfc4271} {A border gateway
+  protocol 4 (bgp-4)}.
+\newblock Technical report, Network Working Group.
+\newblock [Online; accessed 5-December-2025].
 
 \bibitem[{RIS(2008)}]{ripe:2008}
 RIPE~NCC RIS. 2008.
@@ -73,40 +162,41 @@ RIPE~NCC RIS. 2008.
   {Youtube hijacking: A ripe ncc ris case study}.
 \newblock [Online; accessed 3-December-2025].
 
+\bibitem[{Rodday et~al.(2021)Rodday, Cunha, Bush, Katz-Bassett, Rodosek,
+  Schmidt, and W{\"a}hlisch}]{rodday2021revisiting}
+Nils Rodday, {\'I}talo Cunha, Randy Bush, Ethan Katz-Bassett, Gabi~D Rodosek,
+  Thomas~C Schmidt, and Matthias W{\"a}hlisch. 2021.
+\newblock \href {https://dl.ifip.org/db/conf/tma/tma2021/tma2021-paper11.pdf}
+  {Revisiting rpki route origin validation on the data plane}.
+\newblock In \emph{Proc. of Network Traffic Measurement and Analysis Conference
+  (TMA), IFIP}.
+\newblock [Online; accessed 5-December-2025].
+
+\bibitem[{Sermpezis et~al.(2018{\natexlab{a}})Sermpezis, Kotronis, Dainotti,
+  and Dimitropoulos}]{sermpezis2018survey}
+Pavlos Sermpezis, Vasileios Kotronis, Alberto Dainotti, and Xenofontas
+  Dimitropoulos. 2018{\natexlab{a}}.
+\newblock \href {https://arxiv.org/pdf/1801.02918} {A survey among network
+  operators on bgp prefix hijacking}.
+\newblock \emph{ACM SIGCOMM Computer Communication Review}, 48(1):64--69.
+\newblock [Online; accessed 5-December-2025].
+
+\bibitem[{Sermpezis et~al.(2018{\natexlab{b}})Sermpezis, Kotronis, Gigis,
+  Dimitropoulos, Cicalese, King, and Dainotti}]{sermpezis2018artemis}
+Pavlos Sermpezis, Vasileios Kotronis, Petros Gigis, Xenofontas Dimitropoulos,
+  Danilo Cicalese, Alistair King, and Alberto Dainotti. 2018{\natexlab{b}}.
+\newblock \href {https://arxiv.org/pdf/1801.01085v4} {Artemis: Neutralizing bgp
+  hijacking within a minute}.
+\newblock \emph{IEEE/ACM transactions on networking}, 26(6):2471--2486.
+\newblock [Online; accessed 5-December-2025].
+
 \bibitem[{Shapira and Shavitt(2022)}]{shapira2022ap2vec}
 Tal Shapira and Yuval Shavitt. 2022.
-\newblock Ap2vec: an unsupervised approach for bgp hijacking detection.
+\newblock \href
+  {https://www.researchgate.net/publication/359892012_AP2Vec_an_Unsupervised_Approach_for_BGP_Hijacking_Detection}
+  {Ap2vec: an unsupervised approach for bgp hijacking detection}.
 \newblock \emph{IEEE Transactions on Network and Service Management},
   19(3):2255--2268.
-\newblock [Online; accessed 3-December-2025].
-
-\bibitem[{Wikipedia(2024)}]{dewiki:241402194}
-Wikipedia. 2024.
-\newblock \href
-  {https://de.wikipedia.org/w/index.php?title=Exterior-Gateway-Protokoll&oldid=241402194}
-  {Exterior-gateway-protokoll --- wikipedia{,} die freie enzyklopädie}.
-\newblock [Online; Stand 3. Dezember 2025].
-
-\bibitem[{Wikipedia(2025)}]{dewiki:258392754}
-Wikipedia. 2025.
-\newblock \href
-  {https://de.wikipedia.org/w/index.php?title=Border_Gateway_Protocol&oldid=258392754}
-  {Border gateway protocol --- wikipedia{,} die freie enzyklopädie}.
-\newblock [Online; Stand 3. Dezember 2025].
-
-\bibitem[{{Wikipedia contributors}(2025{\natexlab{a}})}]{enwiki:1321790712}
-{Wikipedia contributors}. 2025{\natexlab{a}}.
-\newblock \href
-  {https://en.wikipedia.org/w/index.php?title=BGP_hijacking&oldid=1321790712}
-  {Bgp hijacking --- {Wikipedia}{,} the free encyclopedia}.
-\newblock [Online; accessed 3-December-2025].
-
-\bibitem[{{Wikipedia contributors}(2025{\natexlab{b}})}]{enwiki:1317712446}
-{Wikipedia contributors}. 2025{\natexlab{b}}.
-\newblock \href
-  {https://en.wikipedia.org/w/index.php?title=Resource_Public_Key_Infrastructure&oldid=1317712446}
-  {Resource public key infrastructure --- {Wikipedia}{,} the free
-  encyclopedia}.
-\newblock [Online; accessed 3-December-2025].
+\newblock [Online; accessed 5-December-2025].
 
 \end{thebibliography}

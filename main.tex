@@ -39,7 +39,8 @@
 \newcommand{\Vox}{VoxML Annotation Environment\xspace} % VoxML Annotation Survey
 \newcommand{\ttlabanno}{TTLab VoxML Annotator\xspace}
 
-\title{BGP Hijacking}
+\title{An Introduction to the Border Gateway Protocol and how Malicious Actors Exploit
+its Weaknesses}
 
 
 %% das scheint am float placement auch nichts zu ändern:
@@ -130,11 +131,11 @@ Flexibilität bei der Erstellung der Routingtabellen und Nutzung des Netzwerkes 
 Tatsächlich ist genau diese Effizienz- und Flexibilitätsanforderung die Hauptursache
 der Schwächen des Protokolls.
 %
-Diverse Sicherheitsmaßnahmen wie kryptografische Verschlüsselungen, ausstellung von
-Zertifikaten oder ähnliches kosten wertvolle Systemressourcen.
+Diverse Sicherheitsmaßnahmen wie kryptografische Verschlüsselungen, Ausstellung von
+Zertifikaten oder ähnliches kosten wertvolle Systemressourcen~\citep{li2018bgp}.
 %
-Je nach Verfahren kann es sich bei diesen Ressourcen um Speicherplatz oder
-Rechenleistung handeln.
+Je nach Verfahren kann es sich bei diesen Ressourcen um Speicherplatz, Rechenleistung
+oder auch Bandbreite handeln.
 %
 Was in kleinen Netzwerken möglicherweise noch vertretbare Aufwände sind, kann in einem
 sehr großen Netzwerk oder gar dem globalen Internet sehr schnell zu einem
@@ -143,9 +144,12 @@ unüberwindbaren Hindernis werden.
 Sicherheit, Effizienz und Geschwindigkeit sind in der Praxis oft Anforderungen, die nur
 schwer gleichzeitig erfüllbar sind.
 %
-Entsprechend waren in der \enquote{Basisversion} des BGP so gut wie keine
-nennenswerten Sicherheitsmechanismen integriert, da diese der
-Geschwindigkeitsanforderung an das Protokoll im Wege stehen würden.
+Entsprechend sind in der \enquote{Basisversion} des BGP keine nennenswerten
+Sicherheitsmechanismen integriert, da diese der Geschwindigkeitsanforderung an das
+Protokoll im Wege stehen würden.
+%
+Um BGP zu sichern sind daher zusätzliche Maßnahmen und Protokolle wie
+SBGP~\citep{kent2002secure}, BGPSec~\citep{lepinski2017bgpsec} oder RPKI nötig.
 %
 \begin{figure}[!h]
 %\centering
@@ -200,7 +204,11 @@ Traffic kann entweder manipuliert und/oder über unnötig lange Schleifen ans Zi
 geführt, oder sogar gänzlich ins Nichts geroutet werden.
 %
 Die Motive dafür sind vielfältig und reichen von der Absicht der Sabotage von Services
-oder Netzwerken (DOS Angriffe) bis hin zu staatlich organisierter Spionage.
+oder Netzwerken~\citep{youtubehijack:2008} (DOS Angriffe) bis hin zu staatlich
+organisierter Spionage.
+%
+Aber auch Angriffe aus finanziellen Gründen sind insbesondere seit dem aufleben von
+Kryptowährungen wie Bitcoin keine Seltenheit mehr~\citep{apostolaki2017hijacking}.
 %
 %
 %
@@ -338,17 +346,32 @@ weiterzuleiten, um noch mehr Informationen zu erhalten und dabei unbemerkt zu bl
 In diesem Kapitel werden wir den genauen zeitlichen Ablauf eines echten Vorfalls
 beschreiben.
 %
+Es gibt eine große Menge an gut dokumentierten Vorfällen aus verschiedensten Motiven,
+sowohl aus der fernen als auch aus der nahen Vergangenheit.
+%
+Um die Schwächen des BGP ohne zusätzliche Sicherheitsmaßnahmen zu verstehen, eignen
+sich aber insbesondere die älteren Vorfälle, da diese aus einer Zeit stammen, in der
+moderne Sicherheitsmaßnahmen wie RPKI (seit 2011) und BGPSec (seit 2017) noch nicht im
+Einsatz waren.
+%
 \newline
 \newline
+%
+Besonders anschaulich ist ein mittlerweile recht alter Vorfall aus dem Jahre
+2008~\citep{youtubehijack:2008}.
 %
 Es handelt sich um einen Versuch der Zensur des Internets durch die pakistanische
 Regierung.
 %
 Ziel war die Blockade von YouTube innerhalb von Pakistan, die allerdings
-unbeabsichtigt eskalierte und dabei über die Landesgrenzen von Pakistan hinaus
-Einfluss auf die Verfügbarkeit der Webseite hatte.
+unbeabsichtigt eskalierte und dabei über die Landesgrenzen von Pakistan hinaus für
+eine Dauer von etwa 3 Stunden~\citep{ripe:2008} Einfluss auf die Verfügbarkeit der
+Webseite hatte.
 %
-\paragraph{Pakistan Telecom taking down YouTube}\footnote{\url{https://www.ripe.net/about-us/news/youtube-hijacking-a-ripe-ncc-ris-case-study/}}
+\newline
+\newline
+%
+\textbf{Pakistan Telecom taking down YouTube}
 %
 \newline
 %
@@ -598,21 +621,20 @@ Sicherheitslücken haben.
 \section{To Do}
 %
 \begin{itemize}[leftmargin=*]
-    \item Vollständige Übersetzung des Textes in Englisch.
-    %
-    Erfolgt bei der späteren überarbeitung des Textes, bei der auch die
-    Verbesserungsvorschläge aus dem Review mit einfließen.
-    \item Einfügen der Referenzen an den entsprechenden Textstellen.
-    \item Aussagekräftigen Titel für das Paper finden.
-    \item BGPsec Part noch weiter ausarbeiten.
-    Meinung Reviewer?
-    \item Event Timeline für den YouTube Hijack noch etwas umschreiben und
-    vereinfachen, da diese bis jetzt fast eine 1:1 Kopie aus der Originalquelle ist.
-    Die AS Nummern tragen vermutlich wenig zur Verständlichkeit des Ablaufs bei.
-    Meinung Reviewer?
+    \item Vollständige Übersetzung des Textes in Englisch
+    \item Event Timeline für den YouTube Hijack noch etwas vereinfachen
+    \item BGPSec Part ausarbeiten
+    \item RPKI Part ausarbeiten
+    \item Kapitel 1 (Introduction) in den Abstract mergen
+    \item Kapitel 2 in Introduction umwandeln und Redundanzen entfernen
+    \item Referenzen häufiger in den Text einbinden
 \end{itemize}
 %
 %
+%
+\newpage
+\hspace{10px}
+\newpage
 %
 \bibliographystyle{templates/acl_natbib}
 \nocite{*}
