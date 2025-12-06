@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="- improvements on chapter 4&#10;- added a graph comparing speed, security and efficiency of vanilla BGP and BGP with additional security measures&#10;- added a reference concerning BGP hijacking basics">
+    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="- roughly doubled the amount of references in the .bib file&#10;- removed the last few subpar wikipedia references and replaced them with high quality sources like original protocol definitions&#10;- started integrating the references into the actual text&#10;- minor improvements to chapter 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.blg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibtest.bib" beforeDir="false" afterPath="$PROJECT_DIR$/bibtest.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/main.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
@@ -148,7 +145,15 @@
       <option name="presentableId" value="Default" />
       <updated>1764946782419</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- roughly doubled the amount of references in the .bib file&#10;- removed the last few subpar wikipedia references and replaced them with high quality sources like original protocol definitions&#10;- started integrating the references into the actual text&#10;- minor improvements to chapter 5">
+      <option name="closed" value="true" />
+      <created>1764981699490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764981699490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +197,7 @@
     <MESSAGE value="- add more and better sources to .bib file and add them to the new reference section&#10;- comment out the old placeholder reference section&#10;- add placeholder for a paragraph about AI-based anomaly detection" />
     <MESSAGE value="- overall improvements to the section about security measures&#10;- removed the old section containing references entirely&#10;- added paragraph about AI-based anomaly detection&#10;- added section with conclusion" />
     <MESSAGE value="- improvements on chapter 4&#10;- added a graph comparing speed, security and efficiency of vanilla BGP and BGP with additional security measures&#10;- added a reference concerning BGP hijacking basics" />
-    <option name="LAST_COMMIT_MESSAGE" value="- improvements on chapter 4&#10;- added a graph comparing speed, security and efficiency of vanilla BGP and BGP with additional security measures&#10;- added a reference concerning BGP hijacking basics" />
+    <MESSAGE value="- roughly doubled the amount of references in the .bib file&#10;- removed the last few subpar wikipedia references and replaced them with high quality sources like original protocol definitions&#10;- started integrating the references into the actual text&#10;- minor improvements to chapter 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="- roughly doubled the amount of references in the .bib file&#10;- removed the last few subpar wikipedia references and replaced them with high quality sources like original protocol definitions&#10;- started integrating the references into the actual text&#10;- minor improvements to chapter 5" />
   </component>
 </project>
