@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses">
+    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="switch to ACM template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "BibTeX.main bibliography.executor": "Run",
+    "LaTeX.main (1).executor": "Run",
     "LaTeX.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -59,16 +64,48 @@
       <recent name="C:\Users\Mark\Desktop\git projects\snag_paper\images" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.main">
+  <component name="RunManager" selected="LaTeX.main (1)">
+    <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler />
+        <compiler-path />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <aux-dir />
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
     <configuration name="main bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler>BIBTEX</compiler>
         <compiler-path />
         <compiler-arguments />
         <envs />
-        <main-file>$PROJECT_DIR$/main.tex</main-file>
+        <main-file>$PROJECT_DIR$/src/main.tex</main-file>
         <aux-dir>$PROJECT_DIR$/auxil</aux-dir>
       </texify-bibtex>
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>SUMATRA</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/main.tex</main-file>
+        <output-path>$PROJECT_DIR$/out</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[BibTeX.main bibliography]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
       <method v="2" />
     </configuration>
     <configuration name="main" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
@@ -94,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="LaTeX.main (1)" />
         <item itemvalue="LaTeX.main" />
         <item itemvalue="LaTeX.main" />
       </list>
@@ -163,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765133833578</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="switch to ACM template">
+      <option name="closed" value="true" />
+      <created>1765144145537</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765144145537</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +273,7 @@
     <MESSAGE value="- roughly doubled the amount of references in the .bib file&#10;- removed the last few subpar wikipedia references and replaced them with high quality sources like original protocol definitions&#10;- started integrating the references into the actual text&#10;- minor improvements to chapter 5" />
     <MESSAGE value="- Merged Chapter 1 with the Abstract decreasing the numbers of all subsequent chapters by 1&#10;- Turned old Chapter 2 into a new introduction and removed some redundancy&#10;- moved some misplaced content from the Information exchange chapter into the new introduction further removing redundancy&#10;- massive improvements to the information exchange chapter by adding far more precise descriptions of the process&#10;- Integrated more references into the first chapters" />
     <MESSAGE value="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses" />
+    <MESSAGE value="switch to ACM template" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch to ACM template" />
   </component>
 </project>

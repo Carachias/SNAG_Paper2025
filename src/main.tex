@@ -216,7 +216,7 @@ Routen können sowohl bekannt gegeben, als auch zurückgezogen werden.
 \noindent
 Die wichtigsten Attribute innerhalb der BGP-Nachrichten sind:
 %
-\begin{itemize}[leftmargin=*]
+\begin{itemize}
     \item Die \enquote{AS\_Number}, die der eindeutigen Identifikation von Autonomen
     Systemen dient
     \item Ein \enquote{AS\_Path} bestehend aus einer Kette von AS\_Numbers, der zu
@@ -400,7 +400,7 @@ Webseite hatte.
 %
 Event Timeline:
 %
-\begin{itemize}[leftmargin=*]
+\begin{itemize}
     \item Before, during and after Sunday, 24 February 2008:
     AS36561 (YouTube) announces 208.65.152.0/22
     \item Sunday, 24 February 2008, 18:47 (UTC):
@@ -418,8 +418,6 @@ Event Timeline:
     AS36561 (YouTube) starts announcing 208.65.153.128/25 and 208.65.153.0/25.
     Because of the longest prefix match rule, every router that receives these
     announcements will send the traffic to YouTube.
-    \par
-    \noindent
     Here we can see how Youtube uses/ needs two more specific announcements with
     Prefixes of Length 25 to cover the full address space with a prefix of length 24.
     \item Sunday, 24 February 2008, 20:51 (UTC):

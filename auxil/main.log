@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.7)  7 DEC 2025 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.7)  7 DEC 2025 23:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -732,7 +732,7 @@ Package csquotes Info: ... none found.
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 )
-(C:/Users\Mark\Desktop\git projects\snag_acm_template\auxil\main.aux)
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 30.
@@ -880,8 +880,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package hyperref Info: Link coloring OFF on input line 30.
 
-(C:/Users\Mark\Desktop\git projects\snag_acm_template\auxil\main.out)
-(C:/Users\Mark\Desktop\git projects\snag_acm_template\auxil\main.out)
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.out)
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -1118,19 +1118,6 @@ Overfull \hbox (9.54152pt too wide) in paragraph at lines 203--215
 ten er-folgt über Nachrichten
  []
 
-
-main.tex:220: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220     \item D
-                 ie \enquote{AS\_Number}, die der eindeutigen Identifikation...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 220.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
@@ -1244,56 +1231,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--403
  []
 
 
-main.tex:404: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.404     \item B
-                 efore, during and after Sunday, 24 February 2008:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 440--578
+Underfull \hbox (badness 10000) in paragraph at lines 438--576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--578
+Underfull \hbox (badness 10000) in paragraph at lines 438--576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--578
+Underfull \hbox (badness 10000) in paragraph at lines 438--576
 
  []
 
 
-Overfull \hbox (5.36801pt too wide) in paragraph at lines 440--578
+Overfull \hbox (5.36801pt too wide) in paragraph at lines 438--576
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) um beispiel-sweise fehler-hafte An-nounce-m
 ents durch (verse-hentliche)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--578
+Underfull \hbox (badness 10000) in paragraph at lines 438--576
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3.3 <./images/path_hijack.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--663
+[3.3 <./images/path_hijack.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 577--661
 
  []
 
-[4.4] [5.5]
-(C:/Users\Mark\Desktop\git projects\snag_acm_template\auxil\main.bbl
+[4.4] [5.5] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.bbl
 LaTeX Info: Redefining \tempurl on input line 81.
 LaTeX Info: Redefining \tempurl on input line 97.
 LaTeX Info: Redefining \tempurl on input line 117.
@@ -1400,7 +1368,7 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/stringenc\se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 )
-[6.6] (C:/Users\Mark\Desktop\git projects\snag_acm_template\auxil\main.aux)
+[6.6] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -1410,8 +1378,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  21903 strings out of 467871
- 356667 string characters out of 5428446
- 869944 words of memory out of 5000000
+ 356555 string characters out of 5428446
+ 868945 words of memory out of 5000000
  49805 multiletter control sequences out of 15000+600000
  781526 words of font info for 378 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
@@ -1424,8 +1392,8 @@ c/libertine/LinLibertineT.pfb><C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/type1
 /public/libertine/LinLibertineTB.pfb><C:/Users/Mark/AppData/Roaming/MiKTeX/font
 s/type1/public/libertine/LinLibertineTI.pfb><C:/Users/Mark/AppData/Roaming/MiKT
 eX/fonts/type1/public/newtx/txsys.pfb>
-Output written on "C:/Users\Mark\Desktop\git projects\snag_acm_template\out\mai
-n.pdf" (6 pages, 754652 bytes).
+Output written on "C:/Users\Mark\Desktop\git projects\snag_paper\out\main.pdf" 
+(6 pages, 754240 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)
