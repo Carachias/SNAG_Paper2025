@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="- Merged Chapter 1 with the Abstract decreasing the numbers of all subsequent chapters by 1&#10;- Turned old Chapter 2 into a new introduction and removed some redundancy&#10;- moved some misplaced content from the Information exchange chapter into the new introduction further removing redundancy&#10;- massive improvements to the information exchange chapter by adding far more precise descriptions of the process&#10;- Integrated more references into the first chapters">
+    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.blg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.blg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibtest.bib" beforeDir="false" afterPath="$PROJECT_DIR$/bibtest.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/main.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/main.synctex.gz.sum.synctex" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz.sum.synctex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;BibTeX.main bibliography.executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mark/Desktop/git projects/snag_paper/images&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "BibTeX.main bibliography.executor": "Run",
+    "LaTeX.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "acm__version",
+    "last_opened_file_path": "C:/Users/Mark/Desktop/git projects/snag_acm_template",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mark\Desktop\git projects\snag_paper\images" />
@@ -164,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765002630298</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses">
+      <option name="closed" value="true" />
+      <created>1765133833578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765133833578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +172,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/acm_version" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="HEAD" />
@@ -197,7 +201,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="acm_version" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -210,6 +226,7 @@
     <MESSAGE value="- improvements on chapter 4&#10;- added a graph comparing speed, security and efficiency of vanilla BGP and BGP with additional security measures&#10;- added a reference concerning BGP hijacking basics" />
     <MESSAGE value="- roughly doubled the amount of references in the .bib file&#10;- removed the last few subpar wikipedia references and replaced them with high quality sources like original protocol definitions&#10;- started integrating the references into the actual text&#10;- minor improvements to chapter 5" />
     <MESSAGE value="- Merged Chapter 1 with the Abstract decreasing the numbers of all subsequent chapters by 1&#10;- Turned old Chapter 2 into a new introduction and removed some redundancy&#10;- moved some misplaced content from the Information exchange chapter into the new introduction further removing redundancy&#10;- massive improvements to the information exchange chapter by adding far more precise descriptions of the process&#10;- Integrated more references into the first chapters" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Merged Chapter 1 with the Abstract decreasing the numbers of all subsequent chapters by 1&#10;- Turned old Chapter 2 into a new introduction and removed some redundancy&#10;- moved some misplaced content from the Information exchange chapter into the new introduction further removing redundancy&#10;- massive improvements to the information exchange chapter by adding far more precise descriptions of the process&#10;- Integrated more references into the first chapters" />
+    <MESSAGE value="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses" />
   </component>
 </project>

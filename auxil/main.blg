@@ -2,52 +2,70 @@ This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
-The style file: templates/acl_natbib.bst
-Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: bibliography.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Database file #1: bibtest.bib
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Warning--empty publisher in apostolaki2017hijacking
+Warning--empty address in apostolaki2017hijacking
+Warning--no number and no volume in buehler:2023
+Warning--page numbers missing in both pages and numpages fields in buehler:2023
+Warning--empty publisher in chung2019rpki
+Warning--empty address in chung2019rpki
+Warning--empty publisher in hoarau2021suitability
+Warning--empty address in hoarau2021suitability
+Warning--empty publisher in jaw2024serial
+Warning--empty address in jaw2024serial
+Warning--empty publisher in rodday2021revisiting
+Warning--empty address in rodday2021revisiting
+Warning--page numbers missing in both pages and numpages fields in rodday2021revisiting
 You've used 23 entries,
-            3571 wiz_defined-function locations,
-            851 strings with 11790 characters,
-and the built_in function-call counts, 18949 in all, are:
-= -- 1643
-> -- 973
-< -- 13
-+ -- 319
-- -- 285
-* -- 1303
-:= -- 2806
-add.period$ -- 117
+            6273 wiz_defined-function locations,
+            1677 strings with 24469 characters,
+and the built_in function-call counts, 27299 in all, are:
+= -- 3553
+> -- 950
+< -- 0
++ -- 331
+- -- 321
+* -- 2065
+:= -- 2615
+add.period$ -- 140
 call.type$ -- 23
-change.case$ -- 249
-chr.to.int$ -- 24
-cite$ -- 23
-duplicate$ -- 1229
-empty$ -- 1331
-format.name$ -- 354
-if$ -- 4165
-int.to.chr$ -- 2
+change.case$ -- 192
+chr.to.int$ -- 22
+cite$ -- 36
+duplicate$ -- 2289
+empty$ -- 1628
+format.name$ -- 400
+if$ -- 6609
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 269
-newline$ -- 140
-num.names$ -- 92
-pop$ -- 513
+missing$ -- 70
+newline$ -- 349
+num.names$ -- 160
+pop$ -- 866
 preamble$ -- 1
-purify$ -- 186
+purify$ -- 368
 quote$ -- 0
-skip$ -- 863
+skip$ -- 844
 stack$ -- 0
-substring$ -- 686
-swap$ -- 682
-text.length$ -- 5
+substring$ -- 1950
+swap$ -- 220
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 207
-warning$ -- 0
-while$ -- 100
+type$ -- 547
+warning$ -- 13
+while$ -- 133
 width$ -- 0
-write$ -- 345
+write$ -- 600
+(There were 13 warnings)
