@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Al-Musawi et~al.(2016)Al-Musawi, Branch, and
@@ -26,6 +26,13 @@ Maria Apostolaki, Aviv Zohar, and Laurent Vanbever. 2017.
 \newblock In \emph{2017 IEEE symposium on security and privacy (SP)}, pages
   375--392. IEEE.
 \newblock [Online; accessed 5-December-2025].
+
+\bibitem[{Bush(2014)}]{bush2014origin}
+Randy Bush. 2014.
+\newblock \href {https://www.rfc-editor.org/rfc/rfc7115.html} {Origin
+  validation operation based on the resource public key infrastructure (rpki)}.
+\newblock Technical report, IETF.
+\newblock [Online; accessed 6-December-2025].
 
 \bibitem[{Bühler et~al.(2023)Bühler, Milolidakis, Jacob, Chiesa, Vissicchio,
   and Vanbever}]{buehler:2023}

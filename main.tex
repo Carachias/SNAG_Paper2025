@@ -257,7 +257,7 @@ Die wichtigsten Attribute innerhalb der BGP-Nachrichten sind:
     Adressbereichs, zu dem der AS\_Path führt
 \end{itemize}
 %
-\newline
+%\newline
 %
 Es gibt zwar noch weitere Attribute, aber im Wesentlichen lässt sich der Internetgraph
 aus den oben genannten Attributen erstellen, weshalb wir es für den Kontext dieses
@@ -487,17 +487,40 @@ Anomalieerkennung beschäftigen.
 \newline
 %
 RPKI ist ein kryptografisches Verfahren, das der Authentifizierung von Routing
-Informationen dient.
+Informationen dient~\citep{lepinski2012infrastructure}.
 %
-Dabei werden Kombinationen von AS Nummern und Präfixen signiert und validiert.
+Dabei werden Kombinationen von AS Nummern und Präfixen durch Certificate
+Authorities (CAs) in einer Kette signiert und validiert, sodass eine möglichst
+stabile Trust-Chain mit einem Trust-Anchor am Anfang entsteht.
 %
 Auf diese Weise wird verhindert, dass Autonome Systeme Prefixes announcen, die sie
-nicht kontrollieren.
+nicht kontrollieren, was folglich insbesondere die Vermeidung von
+\enquote{Origin Hijacks} bewirken soll.
 %
-Der entstandene Datensatz wird auch als Route Origin Authorization (ROA) bezeichnet.
+Ein aus Prefix und AS\_Number bestehender Datensatz wird auch als Route Origin
+Authorization Object (ROA Objekt) bezeichnet, das für alle Border-Router zugänglich in
+einer verteilten Datenbank liegt.
 %
-Die Verwendung dieses VErfahrens liegt in der Verantwortung der Internet Service
-Provider (ISPs).
+ROA Objekte können zusätzlich ein optionales Attribut enthalten, mit dem die maximal
+erlaubte Länge eines Prefix announcements für einen gegebenen Adressraum spezifiziert
+wird.
+%
+Dadurch soll verhindert werden, dass Angreifer RPKI aushebeln, indem sie korrekte
+Kombinationen aus AS\_Number und Adressraum verwenden und den eigentlichen Besitzer
+einfach mit einem oder mehreren, spezifischeren Subprefix announcements ausstechen.
+%
+Bei der Verwendung dieses Attributs müssen Besitzer von Adressräumen deshalb aufpassen,
+dass sie die maximale Prefix Länge nicht höher ansetzen als es bei den Prefixen, die
+in den entsprechenden ROA Objekten enthalten sind, der Fall ist~\citep{bush2014origin}.
+%
+Wenn diese Regel nicht eingehalten wird und ein AS Beispielsweise einen Prefix der Länge
+\slash16 in ein ROA Objekt schreibt und das max\_Length Attribut dann aber auf \slash24
+setzt, nennt man das \enquote{Loose ROA}.
+%
+Loose ROAs sind besonders gefährlich, wenn kein Verfahren zur Verifikation von
+AS\_Paths eingesetzt wird, da Angreifer dann die Möglichkeit haben, einen sogenannten
+\enquote{Forged-Origin Subprefix Hijack} durchzuführen, bei dem der Hijack sogar
+durch eine eigentliche Sicherheitsmaßnahme (RPKI) validiert werden kann.
 %
 \newline
 \newline
@@ -506,13 +529,43 @@ Provider (ISPs).
 %
 \newline
 %
-Ähnlich wie RPKI ist auch BGPsec ein kryptografisches Verfahren.
+Ähnlich wie RPKI ist auch BGPsec~\citep{lepinski2017bgpsec} ein kryptografisches
+Verfahren.
 %
 Im Unterschied zu RPKI werden hier aber nicht die kombinationen aus AS\_Number und
 Prefix signiert, sondern die Pfade innerhalb der Announcements.
 %
-Dass BGPsec aktiv ist, erkennt man daran, dass das Attribut \enquote{AS\_Path} in den
-Announcements durch das Attribut \enquote{BGPsec\_Path} ersetzt wurde.
+Eines der Probleme ist, dass diese Signatur in jedem Schritt auf dem Pfad vom Origin AS
+bis zum Ziel AS erfolgen muss.
+%
+Dadurch ist nicht nur der Rechenaufwand im Vergleich zu RPKI relativ hoch, sondern es
+reicht auch noch ein einziger Router ohne BGPSec auf dem Pfad aus, um potenzielle
+Sicherheitsvorteile zu verlieren.
+%
+Und selbst wenn BGPSec auf dem vollständigen Pfad erfolgreich implementiert wird,
+demonstrieren~\citep{li2018bgp}, dass es trotzdem noch Möglichkeiten gibt Traffic
+abzufangen.
+%
+Wenn zwei kompromittierte ASes miteinander kooperieren, können sie mittels einer
+Remote-BGP Session einen direkten Link und damit auch einen sehr kurzen Pfad simulieren.
+%
+Sofern das AS, das auf dem Pfad näher am Ziel liegt den erhaltenen Pfad signiert, können
+die folgenden ASes nicht feststellen, dass kein echter Link vorhanden ist und die
+simulierte Verbindung wird gegenüber einer scheinbar längeren aber echten Route
+bevorzugt.
+%
+\newline
+%
+Weiterhin kann über eine hohe Frequenz an Announcements und Withdrawals einer Route
+durch einen Angreifer die Instabilität dieser Route vorgetäuscht werden.
+%
+Das kann der Angreifer mit allen Routen machen, bis die scheinbar stabilste und
+attraktivste Route aus Sicht des Opfers durch das AS des Angreifers führt.
+%
+\newline
+%
+BGPSec ist durch die hohen Kosten und den geringeren Sicherheitsvorteil in der
+Praxis weniger verbreitet als RPKI.
 %
 \newline
 \newline
@@ -677,8 +730,6 @@ Sicherheitslücken haben.
     \item Vollständige Übersetzung des Textes in Englisch
     \item Event Timeline für den YouTube Hijack noch etwas vereinfachen
     \item Kapitel 3 überarbeiten
-    \item BGPSec Part ausarbeiten
-    \item RPKI Part ausarbeiten
     \item Referenzen häufiger in den Text einbinden
 \end{itemize}
 %

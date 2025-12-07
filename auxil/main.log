@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.2)  6 DEC 2025 07:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.2)  6 DEC 2025 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -634,19 +634,6 @@ Underfull \hbox (badness 2644) in paragraph at lines 254--256
  []
 
 
-main.tex:260: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.260 \newline
-              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Underfull \hbox (badness 4403) in paragraph at lines 262--268
 \OT1/ptm/m/n/10 (+20) Es gibt zwar noch weit-ere At-tribute, aber im
  []
@@ -721,90 +708,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--433
  []
 
 [3 <./images/prefix_specific_hijack.png> <./images/path_hijack.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 468--553
+Underfull \hbox (badness 10000) in paragraph at lines 468--606
 
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 468--553
+Underfull \hbox (badness 1325) in paragraph at lines 468--606
 \OT1/ptm/m/n/10 (+20) RPKI ist ein kryp-tografis-ches Ver-fahren, das der
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 468--553
-\OT1/ptm/m/n/10 (+20) Dabei wer-den Kom-bi-na-tio-nen von AS Num-mern
+Underfull \hbox (badness 4582) in paragraph at lines 468--606
+\OT1/ptm/m/n/10 (+20) Au-then-tifizierung von Rout-ing In-for-ma-tio-nen di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--553
+Underfull \hbox (badness 2343) in paragraph at lines 468--606
+\OT1/ptm/m/n/10 (+20) ent ([][]Lep-in-ski and Kent[][], [][]2012[][]). Dabei we
+r-den
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 468--606
+\OT1/ptm/m/n/10 (+20) AS[]Paths einge-setzt wird, da An-greifer dann die
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--606
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--553
+Underfull \hbox (badness 1067) in paragraph at lines 468--606
+\OT1/ptm/m/n/10 (+20) Un-ter-schied zu RPKI wer-den hier aber nicht die
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 468--606
+\OT1/ptm/m/n/10 (+20) er-fol-gre-ich im-ple-men-tiert wird, demon-stri-eren ([]
+[]Li
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 468--606
+\OT1/ptm/m/n/10 (+20) ments und With-drawals einer Route durch einen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--606
 
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 468--553
+Underfull \hbox (badness 6859) in paragraph at lines 468--606
 \OT1/ptm/m/n/10 (+20) aus-ge-hende An-nounce-ments angewen-det wer-den.
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 468--553
+Underfull \hbox (badness 1845) in paragraph at lines 468--606
 \OT1/ptm/m/n/10 (+20) k[]onnen von der In-ter-net Rout-ing Reg-istry (IRR)
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 468--553
+Underfull \hbox (badness 2409) in paragraph at lines 468--606
 \OT1/ptm/m/n/10 (+20) fehler-hafte An-nounce-ments durch (verse-hentliche)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--553
+Underfull \hbox (badness 10000) in paragraph at lines 468--606
 
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 554--638
-\OT1/ptm/m/n/10 (+20) gro^^Yen Adress-raum mit vie-len, sehr spez-i-fis-chen
- []
-
-
-Underfull \hbox (badness 2735) in paragraph at lines 554--638
-\OT1/ptm/m/n/10 (+20) An-nounce-ments mit lan-gen Pr[]afixen []ubernehmen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 554--638
-
- []
-
-
-Underfull \hbox (badness 1389) in paragraph at lines 554--638
-\OT1/ptm/m/n/10 (+20) nen auch bei der Anoma-lieerken-nung KI-basierte
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 554--638
-\OT1/ptm/m/n/10 (+20) das in An-lehnung an Word2Vec AP2Vec([][]Shapira
- []
-
-
-Underfull \hbox (badness 2735) in paragraph at lines 554--638
-\OT1/ptm/m/n/10 (+20) dies bei einer regul[]aren Routen[]anderung nor-mal
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-[5] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.bbl
-Underfull \hbox (badness 1210) in paragraph at lines 53--59
+Underfull \hbox (badness 1902) in paragraph at lines 607--691
+\OT1/ptm/m/n/10 (+20) gro^^Yen Adress-raum mit vie-len, sehr spez-i-fis-chen
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 607--691
+\OT1/ptm/m/n/10 (+20) An-nounce-ments mit lan-gen Pr[]afixen []ubernehmen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--691
+
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 607--691
+\OT1/ptm/m/n/10 (+20) nen auch bei der Anoma-lieerken-nung KI-basierte
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 607--691
+\OT1/ptm/m/n/10 (+20) das in An-lehnung an Word2Vec AP2Vec([][]Shapira
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 607--691
+\OT1/ptm/m/n/10 (+20) dies bei einer regul[]aren Routen[]anderung nor-mal
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+(C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.bbl
+Underfull \hbox (badness 1210) in paragraph at lines 60--66
 []\OT1/ptm/m/n/10 (+20) Kevin Hoa-rau, Pierre Ugo Tournoux, and Tahiry
  []
 
-) [6] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
+[6]) [7
+
+] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -814,13 +833,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  )
 (\end occurred when \ifx on line 9 was incomplete) 
 Here is how much of TeX's memory you used:
- 16063 strings out of 467871
- 262296 string characters out of 5428446
- 748655 words of memory out of 5000000
- 44446 multiletter control sequences out of 15000+600000
- 667225 words of font info for 252 fonts, out of 8000000 for 9000
+ 16065 strings out of 467871
+ 262363 string characters out of 5428446
+ 748679 words of memory out of 5000000
+ 44449 multiletter control sequences out of 15000+600000
+ 667106 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,14n,93p,1003b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,14n,93p,1003b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/font
 s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
@@ -828,9 +847,9 @@ cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Pro
 gram Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fon
 ts/type1/urw/times/utmri8a.pfb>
 Output written on "C:/Users\Mark\Desktop\git projects\snag_paper\out\main.pdf" 
-(6 pages, 437422 bytes).
+(7 pages, 444034 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
  57365 words of extra memory for PDF output out of 61914 (max. 10000000)
 
