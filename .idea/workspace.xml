@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="switch to ACM template">
+    <list default="true" id="cbafda1d-9fb9-4db9-ac7a-fba64a2cdb68" name="Changes" comment="- Vastly improved chapter 3 integrating the former chapter about real world incidents into the attack types to make them easier to understand&#10;- Removed Chapter 4 that was only containing an event-timeline of the youtube hijacking anyways&#10;- added one more reference about bgpsec to the bibliography">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.blg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.synctex.gz.sum.synctex" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz.sum.synctex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/sec_scal_spd_diagram.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +20,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="acm_version" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -218,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765144145537</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- Vastly improved chapter 3 integrating the former chapter about real world incidents into the attack types to make them easier to understand&#10;- Removed Chapter 4 that was only containing an event-timeline of the youtube hijacking anyways&#10;- added one more reference about bgpsec to the bibliography">
+      <option name="closed" value="true" />
+      <created>1765313185683</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765313185683</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +244,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="acm_version" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/acm_version" />
@@ -283,6 +305,7 @@
     <MESSAGE value="- Merged Chapter 1 with the Abstract decreasing the numbers of all subsequent chapters by 1&#10;- Turned old Chapter 2 into a new introduction and removed some redundancy&#10;- moved some misplaced content from the Information exchange chapter into the new introduction further removing redundancy&#10;- massive improvements to the information exchange chapter by adding far more precise descriptions of the process&#10;- Integrated more references into the first chapters" />
     <MESSAGE value="- Expanded the Section about RPKI&#10;- Expanded the Section aubout BGPSec&#10;- Added another source on RPKI weaknesses" />
     <MESSAGE value="switch to ACM template" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch to ACM template" />
+    <MESSAGE value="- Vastly improved chapter 3 integrating the former chapter about real world incidents into the attack types to make them easier to understand&#10;- Removed Chapter 4 that was only containing an event-timeline of the youtube hijacking anyways&#10;- added one more reference about bgpsec to the bibliography" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Vastly improved chapter 3 integrating the former chapter about real world incidents into the attack types to make them easier to understand&#10;- Removed Chapter 4 that was only containing an event-timeline of the youtube hijacking anyways&#10;- added one more reference about bgpsec to the bibliography" />
   </component>
 </project>

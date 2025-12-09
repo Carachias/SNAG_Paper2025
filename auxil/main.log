@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.7)  9 DEC 2025 21:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.7)  10 DEC 2025 00:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,34 +1058,17 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.0pt on input line 67.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 85.
-<images/sec_scal_spd_diagram_v3.png, id=53, 1107.38719pt x 660.96938pt>
-File: images/sec_scal_spd_diagram_v3.png Graphic file (type png)
-<use images/sec_scal_spd_diagram_v3.png>
-Package pdftex.def Info: images/sec_scal_spd_diagram_v3.png  used on input line
- 150.
-(pdftex.def)             Requested size: 253.14749pt x 151.09187pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 150--152
- [][] 
- []
-
-
-Class acmart Warning: A possible image without description on input line 154.
-
-
-Overfull \hbox (13.00429pt too wide) in paragraph at lines 119--156
+Overfull \hbox (13.00429pt too wide) in paragraph at lines 119--148
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) Was in kleinen Net-zw-erken möglicher-weise
  noch vertret-bare Aufwände
  []
 
 
-Overfull \hbox (3.85373pt too wide) in paragraph at lines 119--156
+Overfull \hbox (3.85373pt too wide) in paragraph at lines 119--148
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) forderun-gen, die nur schwer gle-ichzeitig 
 er-füll-bar sind. Entsprechend
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1098,176 +1081,208 @@ Mark/AppData/Roaming/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users
 }{C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.en
 c}{C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.e
 nc}]
-<images/basic_bgp_route_announcements.jpg, id=76, 1204.5pt x 542.025pt>
+Underfull \hbox (badness 10000) in paragraph at lines 166--238
+
+ []
+
+
+Overfull \hbox (14.08084pt too wide) in paragraph at lines 166--238
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) BGP-Hijacking hat generell eher groÿe Un-te
+rnehmen aus der Wirtschaft
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--238
+
+ []
+
+<images/basic_bgp_route_announcements.jpg, id=80, 1204.5pt x 542.025pt>
 File: images/basic_bgp_route_announcements.jpg Graphic file (type jpg)
 <use images/basic_bgp_route_announcements.jpg>
 Package pdftex.def Info: images/basic_bgp_route_announcements.jpg  used on inpu
-t line 197.
+t line 253.
 (pdftex.def)             Requested size: 253.14749pt x 113.9113pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 197--198
+Overfull \hbox (12.0pt too wide) in paragraph at lines 253--254
  [][] 
  []
 
 
-Class acmart Warning: A possible image without description on input line 200.
+Class acmart Warning: A possible image without description on input line 256.
 
 
-Overfull \hbox (9.54152pt too wide) in paragraph at lines 203--215
+Overfull \hbox (9.54152pt too wide) in paragraph at lines 259--271
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) di-enen. Der eigentliche Aus-tausch der Rou
 ten er-folgt über Nachrichten
  []
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 220.
+(Font)              scaled to size 6.6pt on input line 276.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `OML/nxlmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 220.
+(Font)              scaled to size 6.6pt on input line 276.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 220.
+(Font)              scaled to size 6.6pt on input line 276.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 220.
+(Font)              scaled to size 6.6pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 220.
+(Font)              scaled to size 6.6pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 220.
+(Font)              scaled to size 6.6pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 220.
+(Font)              scaled to size 6.6pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 276.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 220.
-
-Overfull \hbox (9.7952pt too wide) in paragraph at lines 238--259
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) Pre-fix Hi-jacks in ^^P  Black-Hole-Attacks
-^^Q und ^^P  Interception-Attacks^^Q [[]].
- []
-
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 27
-5.
+(Font)              scaled to size 6.6pt on input line 276.
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 33
+1.
 (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/latex/inconsolata\t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 275.
+(Font)              scaled to size 9.0pt on input line 331.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<images/prefix_specific_hijack.png, id=80, 1204.5pt x 542.025pt>
+<images/prefix_specific_hijack.png, id=86, 1204.5pt x 542.025pt>
 File: images/prefix_specific_hijack.png Graphic file (type png)
 <use images/prefix_specific_hijack.png>
 Package pdftex.def Info: images/prefix_specific_hijack.png  used on input line 
-294.
+350.
 (pdftex.def)             Requested size: 253.14749pt x 113.9113pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 294--295
+Overfull \hbox (12.0pt too wide) in paragraph at lines 350--351
  [][] 
  []
 
 
-Class acmart Warning: A possible image without description on input line 297.
+Class acmart Warning: A possible image without description on input line 353.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--299
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--299
+Underfull \hbox (badness 10000) in paragraph at lines 317--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--299
+Underfull \hbox (badness 10000) in paragraph at lines 317--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--299
+Underfull \hbox (badness 10000) in paragraph at lines 317--355
 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 317--355
+
+ []
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 314.
+(Font)              scaled to size 9.0pt on input line 355.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 314.
-[2.2{C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.e
-nc} <./images/sec_scal_spd_diagram_v3.png> <./images/basic_bgp_route_announceme
-nts.jpg>]
-<images/path_hijack.png, id=99, 1204.5pt x 542.025pt>
+(Font)              scaled to size 7.0pt on input line 355.
+[2.2 <./images/basic_bgp_route_announcements.jpg>]
+<images/path_hijack.png, id=107, 1204.5pt x 542.025pt>
 File: images/path_hijack.png Graphic file (type png)
 <use images/path_hijack.png>
-Package pdftex.def Info: images/path_hijack.png  used on input line 362.
+Package pdftex.def Info: images/path_hijack.png  used on input line 418.
 (pdftex.def)             Requested size: 253.14749pt x 113.9113pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 362--363
+Overfull \hbox (12.0pt too wide) in paragraph at lines 418--419
  [][] 
  []
 
 
-Class acmart Warning: A possible image without description on input line 365.
+Class acmart Warning: A possible image without description on input line 421.
+
+<images/sec_scal_spd_diagram_v3.png, id=118, 1107.38719pt x 660.96938pt>
+File: images/sec_scal_spd_diagram_v3.png Graphic file (type png)
+<use images/sec_scal_spd_diagram_v3.png>
+Package pdftex.def Info: images/sec_scal_spd_diagram_v3.png  used on input line
+ 584.
+(pdftex.def)             Requested size: 253.14749pt x 151.09187pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 584--586
+ [][] 
+ []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Class acmart Warning: A possible image without description on input line 588.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--565
+Underfull \hbox (badness 10000) in paragraph at lines 471--632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--565
+Underfull \hbox (badness 10000) in paragraph at lines 471--632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--565
+Underfull \hbox (badness 10000) in paragraph at lines 471--632
 
  []
 
 
-Overfull \hbox (5.36801pt too wide) in paragraph at lines 415--565
+Underfull \hbox (badness 10000) in paragraph at lines 471--632
+
+ []
+
+
+Overfull \hbox (5.36801pt too wide) in paragraph at lines 471--632
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) um beispiel-sweise fehler-hafte An-nounce-m
 ents durch (verse-hentliche)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--565
+Underfull \hbox (badness 10000) in paragraph at lines 471--632
 
  []
 
 
-Overfull \hbox (2.29004pt too wide) in paragraph at lines 415--565
+Overfull \hbox (2.29004pt too wide) in paragraph at lines 471--632
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) derun-gen im gewöhn-lichen Be-trieb-sablauf
 . Speziell zu diesem Zweck
  []
 
-[3.3 <./images/prefix_specific_hijack.png> <./images/path_hijack.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 566--634
+
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [3.3{C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-4.
+enc} <./images/prefix_specific_hijack.png> <./images/path_hijack.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4.4 <./images/sec_scal_spd_diagram_v3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 633--701
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4.4]
+
 (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.bbl
 LaTeX Info: Redefining \tempurl on input line 81.
 LaTeX Info: Redefining \tempurl on input line 97.
@@ -1284,6 +1299,7 @@ dy _ and _ Assessment _ of _ Current _
 
 LaTeX Info: Redefining \tempurl on input line 211.
 LaTeX Info: Redefining \tempurl on input line 227.
+[5.5]
 LaTeX Info: Redefining \tempurl on input line 242.
 LaTeX Info: Redefining \tempurl on input line 259.
 LaTeX Info: Redefining \tempurl on input line 278.
@@ -1363,32 +1379,28 @@ ence can ingest your work..
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
 (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/stringenc\se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (C:\Users\Mark\AppData\Roaming\MiKTeX\tex/generic/stringenc\se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 )
-[5.5] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
+[6.6] (C:/Users\Mark\Desktop\git projects\snag_paper\auxil\main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 991E02757E231E1199347ADA70058915;1362.
+(rerunfilecheck)             Checksum: 7EAD2605494EF80915748BC3FACD2594;1497.
  ) 
 Here is how much of TeX's memory you used:
- 21907 strings out of 467871
- 356724 string characters out of 5428446
- 879476 words of memory out of 5000000
- 49807 multiletter control sequences out of 15000+600000
- 781897 words of font info for 380 fonts, out of 8000000 for 9000
+ 21913 strings out of 467871
+ 356825 string characters out of 5428446
+ 865499 words of memory out of 5000000
+ 49808 multiletter control sequences out of 15000+600000
+ 782170 words of font info for 382 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,13n,131p,1003b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,131p,1003b,782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/type1/public/inconsolata/Inconsol
 ata-zi4r.pfb><C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/type1/public/libertine
 /LinBiolinumT.pfb><C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/type1/public/libe
@@ -1398,9 +1410,9 @@ c/libertine/LinLibertineT.pfb><C:/Users/Mark/AppData/Roaming/MiKTeX/fonts/type1
 s/type1/public/libertine/LinLibertineTI.pfb><C:/Users/Mark/AppData/Roaming/MiKT
 eX/fonts/type1/public/newtx/txsys.pfb>
 Output written on "C:/Users\Mark\Desktop\git projects\snag_paper\out\main.pdf" 
-(5 pages, 753070 bytes).
+(6 pages, 761240 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 78453 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 78461 words of extra memory for PDF output out of 89155 (max. 10000000)
 

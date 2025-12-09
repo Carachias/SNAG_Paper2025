@@ -145,14 +145,6 @@ Routern~\cite{rekhter2006border}.
 Es hindert Angreifer aber nichts daran eine neue Verbindung zu einem Border-Router
 aufzubauen und diesem dann gänzlich erfundene BGP-Nachrichten zu senden.
 %
-\begin{figure}[!h]
-%\centering
-\includegraphics[width=0.5\textwidth]{images/sec_scal_spd_diagram_v3}
-\caption{Pure BGP vs. BGP with additional security measures (Graph Scale more
-arbitrary than exact)}
-\label{fig:BGP vs BGP with sec measures}
-\end{figure}
-%
 \par
 \noindent
 %
@@ -163,19 +155,83 @@ machen dieses Protokoll extrem interessant für Hacker.
 Durch das Verbreiten falscher BGP Informationen können auf einen Schlag riesige Mengen
 an Traffic umgeleitet werden.
 %
-Traffic kann entweder manipuliert und/oder über unnötig lange Schleifen ans Ziel
-geführt, oder sogar gänzlich ins Nichts geroutet werden.
+Um BGP zu sichern sind daher zusätzliche Maßnahmen und Protokolle wie
+SBGP~\cite{kent2002secure}, BGPSec~\cite{lepinski2017bgpsec} oder
+RPKI~\cite{lepinski2012infrastructure} notwendig.
 %
-Die Motive dafür sind vielfältig und reichen von der Absicht der Sabotage von Services
+%
+%
+\section{Threat Modeling}
+%
+Dieses Kapitel soll ein etwas besseres Verständnis dafür vermitteln, welche Ziele
+besonders lukrativ sind und ob es sich bei BGP-Hijacking gemessen an der Anzahl der
+bekannten Vorfälle wirklich um ein ernstzunehmendes Problem handelt.
+%
+\newline
+\newline
+%
+\textbf{Wer wird Ziel}
+%
+\newline
+%
+BGP-Hijacking hat generell eher große Unternehmen aus der Wirtschaft oder Regierungsnahe
+Institutionen zum Ziel.
+%
+Privatpersonen sind in der Regel nur indirekt betroffen, wenn Beispielsweise die Daten
+eines großen Unternehmens abgefangen werden und dazu auch Kundendaten gehören.
+%
+Die Kriterien, warum man als Unternehmen oder Organisation zur Zielscheibe wird sind
+vielfältig.
+%
+Die Motive der Angreifer reichen von der Absicht der Sabotage von Services
 oder Netzwerken~\cite{youtubehijack:2008} (DOS Angriffe) bis hin zu staatlich
 organisierter Spionage.
 %
 Aber auch Angriffe aus finanziellen Gründen sind insbesondere seit dem Aufleben von
 Kryptowährungen wie Bitcoin keine Seltenheit mehr~\cite{apostolaki2017hijacking}.
 %
-Um BGP zu sichern sind daher zusätzliche Maßnahmen und Protokolle wie
-SBGP~\cite{kent2002secure}, BGPSec~\cite{lepinski2017bgpsec} oder
-RPKI~\cite{lepinski2012infrastructure} notwendig.
+\newline
+\newline
+%
+\textbf{Frequenz der Angriffe}
+%
+\newline
+%
+Es ist nicht einfach Eine genaue Anzahl tatsächlicher Angriffe zu benennen, da nicht
+alle Angriffe als solche erkannt werden und es entsprechend eine gewisse Dunkelziffer
+gibt.
+%
+Die Tendenz zeigt aber, dass mit dem generellen Wachstum des Internets und der Verlegung
+von immer mehr Services und Diensten in das Internet auch die Zahl der Vorfälle
+zunimmt~\cite{hijack_frequencies10078883}
+%
+Auch moderne Sicherheitsmaßnahmen wie RPKI und BGPSec scheinen nicht in der Lage zu
+sein die absolute Anzahl der jährlichen Vorfälle zu senken.
+%
+Obwohl auch sie keinen garantierten Schutz vor erfolgreichen Angriffen bieten, können
+sie dennoch helfen Angriffe gegen das eigene Netzwerk oder Unternehmen zumindest deutlich
+zu erschweren, sofern sie korrekt implementiert werden.
+%
+\newline
+\newline
+%
+\textbf{Einschätzung der Netzwerkbetreiber}
+%
+\newline
+%
+Eine Interessante Studie~\cite{sermpezis2018survey} aus 2018 mit 75 befragten
+Netzwerkbetreibern hat ergeben, dass BGP-Hijacking von den Netzwerkbetreibern als ein
+ernstzunehmendes Problem bezeichnet wird.
+%
+Mehr als 40\% der Befragten Betreiber gaben an bereits zum Ziel von Hijacking
+Angriffen geworden zu sein.
+%
+Die Dauer der Angriffe betrug in 57\% der Fälle mehr als eine Stunde, in 25\% der
+Fälle sogar mehr als einen Tag.
+%
+Etwa 71\% gaben damals an unter anderem aus Kostengründen kein RPKI zu verwenden und
+setzten stattdessen eher auf verstärktes Peering mit anderen Netzwerken um die
+Auswirkungen von Hijacking Incidents abzumildern.
 %
 %
 %
@@ -235,7 +291,7 @@ Papers dabei belassen.
 %
 \section{Kategorien von Angriffen}
 %
-Manche Quellen teilen BGP Hijacking incidents grob in die Kategorien
+Manche Quellen~\cite{jaw2024serial} teilen BGP Hijacking incidents grob in die Kategorien
 \enquote{Prefix Hijacks} und \enquote{Path Hijacks} ein, während andere Quellen diese
 Unterscheidung nicht vornehmen und allgemein von \enquote{BGP Hijacks} sprechen.
 %
@@ -259,7 +315,7 @@ Adressraum definiert.
 \subsection{Prefix Hijacking}
 %
 Generell bevorzugen Router bei der Erstellung ihrer Routingtabellen Announcements mit
-möglichst präzisen Prefixes.
+möglichst präzisen Prefixes~\cite{jaw2024serial}.
 %
 Ein Announcement wird immer dann präziser, wenn der Prefix in der CIDR Notation länger,
 also die Zahl nach dem \enquote{\slash} größer wird.
@@ -349,7 +405,7 @@ AS\_Path gegenüber denen mit langem Pfad bevorzugt.
 %
 Die Grundidee ist, dass ein kürzerer Pfad weniger Hops bedeutet, was die Anzahl
 der potenziellen points of failure auf der Route, den kommunikativen Overhead und auch
-(wahrscheinlich) die Latenz reduziert.
+(wahrscheinlich) die Latenz reduziert~\cite{jaw2024serial}.
 %
 Angreifer Nutzen dieses Grundprinzip also aus, indem sie behaupten, dass sie einen
 besonders kurzen Weg zu einem bestimmten Adressraum kennen.
@@ -472,7 +528,7 @@ durch eine eigentliche Sicherheitsmaßnahme (RPKI) validiert werden kann.
 Obwohl die Verwendung von RPKI in seiner noch nicht vollständig standardisierten
 Anfangszeit in 2011 recht selten war, hat sich diese Situation mittlerweile deutlich
 verbessert und auch die Anzahl der Miskonfigurationen hat stark
-abgenommen~\cite{chung2019rpki}.
+abgenommen~\cite{chung2019rpki, jaw2024serial}.
 %
 \newline
 \newline
@@ -519,6 +575,17 @@ attraktivste Route aus Sicht des Opfers durch das AS des Angreifers führt.
 BGPSec ist zwar in der lage zumindest einige Sicherheitsbedenken auszuräumen, aber es
 keine Optimallösung die vollständige Sicherheit
 garantiert~\cite{li2018bgp, oesterle2021challenges}.
+%
+\newline
+\newline
+%
+\begin{figure}[!h]
+%\centering
+\includegraphics[width=0.5\textwidth]{images/sec_scal_spd_diagram_v3}
+\caption{Pure BGP vs. BGP with additional security measures (Graph Scale more
+arbitrary than exact)}
+\label{fig:BGP vs BGP with sec measures}
+\end{figure}
 %
 \newline
 \newline
@@ -642,8 +709,11 @@ Angreifer bleiben.
 %
 \newline
 %
-Obwohl BGP allein ein äußerst anfälliges Protokoll ist, gibt es mittlerweile sehr
-effektive Präventionsmaßnahmen wie RPKI, BGPsec und RouteFiltering.
+Obwohl BGP allein ein äußerst anfälliges Protokoll ist, gibt es mittlerweile recht
+effektive Präventionsmaßnahmen wie RPKI, BGPsec und RouteFiltering, die Angriffe zwar
+nicht gänzlich verhindern, aber zumindest erschweren können.
+%
+\newline
 %
 Bedauerlicherweise scheitert es aber in der Praxis häufig an der Implementierung und
 Anwendung dieser Maßnahmen.
@@ -672,8 +742,6 @@ Sicherheitslücken haben.
 %
 \begin{itemize}
     \item Vollständige Übersetzung des Textes in Englisch
-    \item Kapitel zwischen 1 und 2 Einfügen, das einen \enquote{durchschnittlichen
-    Angreifer} beschreibt
     \item Referenzen häufiger in den Text einbinden
 \end{itemize}
 %
