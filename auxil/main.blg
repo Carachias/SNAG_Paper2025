@@ -24,48 +24,49 @@ Warning--empty publisher in hoarau2021suitability
 Warning--empty address in hoarau2021suitability
 Warning--empty publisher in jaw2024serial
 Warning--empty address in jaw2024serial
+Warning--page numbers missing in both pages and numpages fields in oesterle2021challenges
 Warning--empty publisher in rodday2021revisiting
 Warning--empty address in rodday2021revisiting
 Warning--page numbers missing in both pages and numpages fields in rodday2021revisiting
-You've used 23 entries,
+You've used 24 entries,
             6273 wiz_defined-function locations,
-            1677 strings with 24469 characters,
-and the built_in function-call counts, 27299 in all, are:
-= -- 3553
-> -- 950
+            1683 strings with 24685 characters,
+and the built_in function-call counts, 28349 in all, are:
+= -- 3720
+> -- 981
 < -- 0
-+ -- 331
-- -- 321
-* -- 2065
-:= -- 2615
-add.period$ -- 140
-call.type$ -- 23
-change.case$ -- 192
-chr.to.int$ -- 22
-cite$ -- 36
-duplicate$ -- 2289
-empty$ -- 1628
-format.name$ -- 400
-if$ -- 6609
++ -- 341
+- -- 330
+* -- 2143
+:= -- 2704
+add.period$ -- 146
+call.type$ -- 24
+change.case$ -- 199
+chr.to.int$ -- 23
+cite$ -- 38
+duplicate$ -- 2374
+empty$ -- 1691
+format.name$ -- 413
+if$ -- 6890
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 70
-newline$ -- 349
-num.names$ -- 160
-pop$ -- 866
+missing$ -- 74
+newline$ -- 363
+num.names$ -- 167
+pop$ -- 903
 preamble$ -- 1
-purify$ -- 368
+purify$ -- 383
 quote$ -- 0
-skip$ -- 844
+skip$ -- 868
 stack$ -- 0
-substring$ -- 1950
-swap$ -- 220
+substring$ -- 2008
+swap$ -- 224
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 547
-warning$ -- 13
-while$ -- 133
+type$ -- 563
+warning$ -- 14
+while$ -- 136
 width$ -- 0
-write$ -- 600
-(There were 13 warnings)
+write$ -- 624
+(There were 14 warnings)

@@ -233,33 +233,41 @@ Papers dabei belassen.
 %
 %
 %
-\section{Typen und Ablauf eines Angriffs}
+\section{Kategorien von Angriffen}
 %
 Manche Quellen teilen BGP Hijacking incidents grob in die Kategorien
 \enquote{Prefix Hijacks} und \enquote{Path Hijacks} ein, während andere Quellen diese
 Unterscheidung nicht vornehmen und allgemein von \enquote{BGP Hijacks} sprechen.
 %
-Letztere verstehen unter Prefix- und Path Hijacking eher zwei
-Vorgehensweisen, die nicht selten in Kombination miteinander eingesetzt werden, falls
-eine Methode alleine nicht zum Ziel führt.
+Manche Quellen nehmen sogar noch feinere Einteilungen vor und zerlegen Beispielsweise
+die Klasse der Prefix Hijacks in \enquote{Black-Hole-Attacks} und
+\enquote{Interception-Attacks}~\cite{oesterle2021challenges}.
 %
-Das ist zum Beispiel der Fall, wenn zwei ASes den gleichen Prefix announcen.
+Außerdem werden teils unterschiedliche Begriffe für die Gleichen Angriffe verwendet,
+wie es zum Beispiel bei \enquote{Prefix Hijacking} und \enquote{Origin Hijacking} der
+Fall ist.
 %
-Dann ist die Länge des Pfades zu dem Adressraum ein tie-breaker, den der Angreifer
-gegebenenfalls zusätzlich manipulieren muss, um sein Ziel zu erreichen.
+Insgesamt haben sowohl unsere eigene Literaturrecherche als auch die anderer Autoren
+ergeben, dass die Kategorisierungen und Bezeichnungen von Angriffen teilweise
+inkonsistent sind~\cite{raynor2022state}.
 %
-\subsection{Spezifischeren Adressraum announcen}
+In diesem Paper werden wir deshalb die relativ gängige Einteilung in
+\enquote{Prefix Hijacks} und \enquote{Path Hijacks} verwenden, je nachdem, ob der Angriff
+sich hauptsächlich über den Adressraum selbst oder über den Pfad zu einem entsprechenden
+Adressraum definiert.
 %
-Generell bevorzugen Router bei der Erstellung ihrer Routingtabellen möglichst präzise
-Announcements.
+\subsection{Prefix Hijacking}
 %
-Ein Announcement wird immer dann präziser, wenn der Prefix in der CIDR Notation länger
-, also die Zahl nach dem \enquote{\slash} größer wird.
+Generell bevorzugen Router bei der Erstellung ihrer Routingtabellen Announcements mit
+möglichst präzisen Prefixes.
+%
+Ein Announcement wird immer dann präziser, wenn der Prefix in der CIDR Notation länger,
+also die Zahl nach dem \enquote{\slash} größer wird.
 %
 \newline
 \newline
 %
-\textbf{Beispiel:}
+\textbf{Example in IPv4:}
 %
 \newline
 \newline
@@ -273,6 +281,13 @@ Ein Announcement wird immer dann präziser, wenn der Prefix in der CIDR Notation
 %
 \newline
 \newline
+%
+Angreifer Nutzen diese sogenannte \enquote{longest-prefix-matching-rule} für sich
+aus, indem sie präzisere Prefixes in ihren BGP-Nachrichten verschicken als die
+legitimen Eigentümer eines Adressraumes.
+%
+So überreden sie quasi andere Border-Router ihre gefälschten Announcements zu
+akzeptieren und zu bevorzugen.
 %
 \begin{figure}[!h]
 %\centering
@@ -288,58 +303,59 @@ Je präziser die Prefixes in den Announcements sind, desto kleiner ist automatis
 Adressraum, der in dem Prefix enthalten ist.
 %
 Das kann für einen Angreifer einen Nachteil darstellen, wenn er einen möglichst großen
-Adressraum angreifen will aber die Empfänger seiner Announcements alle zu
+Adressraum übernehmen will und die Empfänger seiner Announcements alle zu
 unspezifischen Announcements verwerfen.
 %
-Um sein Ziel dann zu erreichen muss er eine auffällig hohe Menge an sehr spezifischen
+Um sein Ziel zu erreichen muss er dann eine auffällig hohe Menge an sehr spezifischen
 Announcements versenden, was schnell dazu führen kann, dass der Angriff als solcher
 erkannt wird.
 %
 \par
 \noindent
 %
-Wie wir in dem im folgenden Kapitel beschriebenen Fallbeispiel erkennen werden, kann
-diese Methode aber auch von legitimen ASes verwendet werden, um den gekaperten
-Adressraum zurückzuerobern.
+Wenn ein legitimer Besitzer eines Adressraumes den Verdacht hat, dass er das Opfer eines
+Prefix-Hijacks ist, kann er diese Methode tatsächlich genauso anwenden wie der Angreifer
+und dadurch versuchen seinen gekaperten Adressraum zurückzuerobern.
 %
-\subsection{Kürzeren AS\_Path announcen}
+\par
+\noindent
+%
+Dies war zum Beispiel 2008 der Fall, als Pakistan Telecom versucht hat die Verfügbarkeit
+von YouTube innerhalb von Pakistan einzuschränken~\cite{ripe:2008}.
+%
+\par
+\noindent
+%
+Dabei hat Youtube ursprünglich einen \slash22er Prefix verwendet, der dann von
+Pakistan Telecom durch einen \slash24er Prefix gehijacked wurde.
+%
+YouTube versuchte zunächst den Adressraum zurückzuerobern, indem es ebenfalls einen
+\slash24er Prefix announced hat.
+%
+Mit zwei Prefixen identischer Länge im Umlauf konnte YouTube jedoch nur einen Teil des
+Traffics zurückerobern.
+%
+Schlussendlich musste YouTube zwei \slash25er Prefixes announcen, um den
+vollständigen Adressraum des \slash24er Prefixes abzudecken und wieder den gesamten Traffic
+zu erhalten.
+%
+\subsection{Path Hijacking}
 %
 Ein weiteres extrem relevantes Attribut bei der erstellung der Routingtabellen ist der
 sogenannte \enquote{AS\_Path} und seine Länge.
 %
-Das BGP soll möglichst effizient, aber auch flexibel und dynamisch sein.
-%
-Aus diesem Grund werden Routen mit kurzem AS\_Path gegenüber denen mit langem Pfad
-bevorzugt.
+Um Pakete möglichst schnell und zuverlässig zuzustellen werden Routen mit kurzem
+AS\_Path gegenüber denen mit langem Pfad bevorzugt.
 %
 Die Grundidee ist, dass ein kürzerer Pfad weniger Hops bedeutet, was die Anzahl
 der potenziellen points of failure auf der Route, den kommunikativen Overhead und auch
 (wahrscheinlich) die Latenz reduziert.
 %
-\par
-\noindent
-%
-Nicht nur Angreifer, sondern auch legitime ASes können dieses Attribut
-\enquote{manipulieren}.
-%
-Legitime ASes können den Pfad beispielsweise künstlich verlängern, indem sie ihre eigene
-AS\_Number mehrfach hintereinander in den Pfad schreiben, um anderen mitzuteilen, dass
-zwar ein Pfad durch ihr Netzwerk existiert, dieser in der Praxis aber nicht genutzt
-werden soll.
-%
-Dieses Vorgehen dient oftmals der Umsetzung von routing Policies und wird \enquote{
-Path prepending} genannt.
+Angreifer Nutzen dieses Grundprinzip also aus, indem sie behaupten, dass sie einen
+besonders kurzen Weg zu einem bestimmten Adressraum kennen.
 %
 \par
 \noindent
-%
-Angreifer können dieses Prinzip ausnutzen, indem sie behaupten, dass sie einen Weg zu
-einem bestimmten AS kennen, der viel kürzer ist als alle anderen bisher bekannten Wege.
-%
-Um der Effizienzanforderung nachzukommen liegt es dann im Interesse der
-anderen ASes diesen kurzen Pfad zu übernehmen und ihren Traffic dem Angreifer zu
-schicken, in der Hoffnung, dass dieser sämtliche Pakete auf der kürzesten Route
-weiterleitet.
 %
 \begin{figure}[!h]
 %\centering
@@ -348,88 +364,49 @@ weiterleitet.
 \label{fig:BGP Path Hijack}
 \end{figure}
 %
+Die Pfadlänge ist zwar wichtig, allerdings hat die \enquote{longest-prefix-matching-rule}
+eine noch höhere Priorität.
+%
+Path Hijacks werden deshalb unter anderem dann interessant, wenn Angreifer aus
+irgendeinem Grund (Beispielsweise wegen RPKI) nicht in der Lage sind, noch spezifischere
+Announcements zu versenden als die legitimen Besitzer des Adressraumes.
+%
+Wenn die Angreifer nur in der Lage sind einen Prefix der gleichen Länge zu versenden
+wie die legitimen Besitzer eines Adressraumes dient die Pfadlänge als tie-breaker.
+%
+In diesem Fall wird der Teil des Traffics an den Angreifer umgeleitet, der von
+Absendern kommt, die näher an dem AS des Angreifers liegen als an dem des
+tatsächlichen Besitzers des Adressraumes.
+%
+Auch diese Situation konnte 2008 während dem Youtube Hijacking~\cite{ripe:2008}
+beobachtet werden, als der gleiche \slash24er Prefix sowohl von Pakistan Telecom als auch
+von Youtube announced wurde.
+%
+Hat ein Angreifer nicht einmal die Möglichkeit den gleichen Prefix wie ein legitimer
+Besitzer zu announcen, kann er durch die Behauptung einen besonders kurzen Pfad zum
+Ziel zu kennen aber immer noch Versuchen zu erreichen, dass andere ASes ihren Traffic
+dem Angreifer schicken, weil sie denken, dass der Angreifer ihn besonders schnell
+weiterleiten könne.
+%
+In diesem Fall würde das AS des Angreifers dann nicht mehr vorgeben das Ziel des traffics
+zu sein, sondern lediglich als besonders attraktives Transit-AS auftreten.
+%
 \par
 \noindent
 %
-Sobald der Angreifer erstmal im Besitz des Traffics ist, hat er viele Möglichkeiten
-großen Schaden anzurichten.
+Das Hauptziel des Angreifers ist es allerdings immer irgendwie in den Besitz des
+Traffics zu kommen.
 %
-Er kann diesen beispielsweise verwerfen und dadurch die Verfügbarkeit eines
-Netzwerkes oder Dienstes stören (real world incident: Pakistan Telecom taking
-down YouTube).
+Ob er sich als Transit-AS oder als Ziel-AS ausgibt ist aus seiner Sicht in der Regel
+zweitrangig, da er in beiden Fällen die gleichen Möglichkeiten hat, was er mit dem
+erhaltenen Traffic anstellen kann.
 %
-Ist das Ziel großangelegte Spionage, hat der Angreifer aber auch die Möglichkeit die
-Pakete zu inspizieren/ manipulieren und dann an den eigentlichen Empfänger
-weiterzuleiten, um noch mehr Informationen zu erhalten und dabei unbemerkt zu bleiben.
+Er kann ihn in der Rolle des Ziel-AS verwerfen oder ihn als Transit-AS einfach nicht
+mehr weiterleiten.
 %
-%
-%
-\section{Real world Incidents}
-%
-In diesem Kapitel werden wir den genauen zeitlichen Ablauf eines echten Vorfalls
-beschreiben.
-%
-Es gibt eine große Menge an gut dokumentierten Vorfällen aus verschiedensten Motiven,
-sowohl aus der fernen als auch aus der nahen Vergangenheit.
-%
-Um die Schwächen des BGP ohne zusätzliche Sicherheitsmaßnahmen zu verstehen, eignen
-sich aber insbesondere die älteren Vorfälle, da diese aus einer Zeit stammen, in der
-moderne Sicherheitsmaßnahmen wie RPKI (seit 2011) und BGPSec (seit 2017) noch nicht im
-Einsatz waren.
-%
-\newline
-\newline
-%
-Besonders anschaulich ist ein mittlerweile recht alter Vorfall aus dem Jahre
-2008~\cite{youtubehijack:2008}.
-%
-Es handelt sich um einen Versuch der Zensur des Internets durch die pakistanische
-Regierung.
-%
-Ziel war die Blockade von YouTube innerhalb von Pakistan, die allerdings
-unbeabsichtigt eskalierte und dabei über die Landesgrenzen von Pakistan hinaus für
-eine Dauer von etwa 3 Stunden~\cite{ripe:2008} Einfluss auf die Verfügbarkeit der
-Webseite hatte.
-%
-\newline
-\newline
-%
-\textbf{Pakistan Telecom taking down YouTube}
-%
-\newline
-%
-Event Timeline:
-%
-\begin{itemize}
-    \item Before, during and after Sunday, 24 February 2008:
-    AS36561 (YouTube) announces 208.65.152.0/22
-    \item Sunday, 24 February 2008, 18:47 (UTC):
-    AS17557 (Pakistan Telecom) starts announcing the more specific address space of
-    208.65.153.0/24.
-    Routers around the world receive the announcement, and YouTube traffic is
-    redirected to Pakistan.
-    \item Sunday, 24 February 2008, 20:07 (UTC):
-    AS36561 (YouTube) starts announcing 208.65.153.0/24.
-    With two identical prefixes in the routing system, BGP policy
-    rules, such as preferring the shortest AS path, determine which route is chosen.
-    This means that AS17557 (Pakistan Telecom) continues to attract some of YouTube's
-    traffic.
-    \item Sunday, 24 February 2008, 20:18 (UTC):
-    AS36561 (YouTube) starts announcing 208.65.153.128/25 and 208.65.153.0/25.
-    Because of the longest prefix match rule, every router that receives these
-    announcements will send the traffic to YouTube.
-    Here we can see how Youtube uses/ needs two more specific announcements with
-    Prefixes of Length 25 to cover the full address space with a prefix of length 24.
-    \item Sunday, 24 February 2008, 20:51 (UTC):
-    All prefix announcements, including the hijacked /24 which was originated by
-    AS17557 (Pakistan Telecom) via AS3491 (PCCW Global), are seen prepended by another
-    17557.
-    The longer AS path means that more routers prefer the announcement originated by
-    YouTube.
-    \item Sunday, 24 February 2008, 21:01 (UTC):
-    AS3491 (PCCW Global) withdraws all prefixes originated by AS17557 (Pakistan
-    Telecom), thus stopping the hijack of 208.65.153.0/24.
-\end{itemize}
+Genauso gut kann er den Traffic nachdem er ihn beispielsweise inspiziert oder
+modifiziert hat auch in beiden Fällen an den legitimen empfänger weiterleiten, um
+nicht so schnell aufzufallen und noch mehr Informationen abzugreifen.
 %
 %
 %
@@ -492,6 +469,11 @@ AS\_Paths eingesetzt wird, da Angreifer dann die Möglichkeit haben, einen sogen
 \enquote{Forged-Origin Subprefix Hijack} durchzuführen, bei dem der Hijack sogar
 durch eine eigentliche Sicherheitsmaßnahme (RPKI) validiert werden kann.
 %
+Obwohl die Verwendung von RPKI in seiner noch nicht vollständig standardisierten
+Anfangszeit in 2011 recht selten war, hat sich diese Situation mittlerweile deutlich
+verbessert und auch die Anzahl der Miskonfigurationen hat stark
+abgenommen~\cite{chung2019rpki}.
+%
 \newline
 \newline
 %
@@ -508,9 +490,9 @@ Prefix signiert, sondern die Pfade innerhalb der Announcements.
 Eines der Probleme ist, dass diese Signatur in jedem Schritt auf dem Pfad vom Origin AS
 bis zum Ziel AS erfolgen muss.
 %
-Dadurch ist nicht nur der Rechenaufwand im Vergleich zu RPKI relativ hoch, sondern es
-reicht auch noch ein einziger Router ohne BGPSec auf dem Pfad aus, um potenzielle
-Sicherheitsvorteile zu verlieren.
+Dadurch ist nicht nur der Rechenaufwand im Vergleich zu ROV mittels RPKI relativ hoch,
+sondern es reicht auch noch ein einziger Router ohne BGPSec auf dem Pfad aus, um
+potenzielle Sicherheitsvorteile zu verlieren.
 %
 Und selbst wenn BGPSec auf dem vollständigen Pfad erfolgreich implementiert wird,
 demonstrieren~\cite{li2018bgp}, dass es trotzdem noch Möglichkeiten gibt Traffic
@@ -534,8 +516,9 @@ attraktivste Route aus Sicht des Opfers durch das AS des Angreifers führt.
 %
 \newline
 %
-BGPSec ist durch die hohen Kosten und den geringeren Sicherheitsvorteil in der
-Praxis weniger verbreitet als RPKI.
+BGPSec ist zwar in der lage zumindest einige Sicherheitsbedenken auszuräumen, aber es
+keine Optimallösung die vollständige Sicherheit
+garantiert~\cite{li2018bgp, oesterle2021challenges}.
 %
 \newline
 \newline
@@ -573,24 +556,14 @@ auch die ausgehenden Announcements.
 Beim Monitoring geht es primär um die Beobachtung von Veränderungen im gewöhnlichen
 Betriebsablauf.
 %
+Speziell zu diesem Zweck entwickelt gibt es eine Reihe von Monitoring-Tools, die die
+Identifikation von Incidents deutlich erleichtern soll.
+%
+Beispiel hierfür sind Tools die der Visualisierung von Routen dienen, wodurch
+plötzlich auftretende Veränderungen leichter erkennbar sind~\cite{raynor2022state}.
+%
 \par
 \noindent
-%
-Ein Beispiel hierfür wäre die plötzliche Veränderung einer Route.
-%
-Wird eine Veränderung beobachtet, gilt es den Grund dafür herauszufinden.
-%
-Möglicherweise handelt es sich nur um den Ausfall der gewöhnlichen Route aus Gründen
-wie einem Hardwaredefekt an einem Router oder Stromausfall.
-%
-Da sich in einem solchen Fall die Route dynamisch an die gegebenheiten anpassen soll,
-um Ausfallsicherheit zu garantieren, gäbe es hier vermutlich nichts zu befürchten und
-das BGP erfüllt wie gewollt seinen Job.
-%
-Wenn aber keinerlei Probleme mit der ursprünglichen Route bekannt sind, kann das schon
-ein Anlass sein die Veränderung der Route genauer zu untersuchen.
-%
-\newline
 %
 Ein Weiteres Beispiel einer Anomalie, die es zu untersuchen gilt, kann eine
 ungewöhnliche Menge an Traffic, insbesondere in Form von BGP-Announcements sein.
@@ -694,19 +667,19 @@ Sicherheitslücken haben.
 %
 %
 %
-\newpage
+%\newpage
 \section{To Do}
 %
 \begin{itemize}
     \item Vollständige Übersetzung des Textes in Englisch
-    \item Event Timeline für den YouTube Hijack noch etwas vereinfachen
-    \item Kapitel 3 überarbeiten
+    \item Kapitel zwischen 1 und 2 Einfügen, das einen \enquote{durchschnittlichen
+    Angreifer} beschreibt
     \item Referenzen häufiger in den Text einbinden
 \end{itemize}
 %
 %
 %
-\newpage
+%\newpage
 %\hspace{10px}
 %\newpage
 %

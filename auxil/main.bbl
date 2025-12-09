@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -312,6 +312,23 @@
 \tempurl}
 \newblock
 \shownote{[Online; accessed 5-December-2025]}.
+
+
+\bibitem[Oesterle et~al\mbox{.}(2021)]%
+        {oesterle2021challenges}
+\bibfield{author}{\bibinfo{person}{Jan Oesterle}, \bibinfo{person}{Holger
+  Kinkelin}, {and} \bibinfo{person}{Filip Rezabek}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Challenges with BGPSec}.
+\newblock \bibinfo{journal}{\emph{Network}}  \bibinfo{volume}{5}
+  (\bibinfo{year}{2021}).
+\newblock
+\urldef\tempurl%
+\url{https://www.net.in.tum.de/fileadmin/TUM/NET/NET-2022-01-1/NET-2022-01-1_02.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{[Online; accessed 8-December-2025]}.
 
 
 \bibitem[Raynor et~al\mbox{.}(2022)]%
