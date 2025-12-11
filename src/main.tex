@@ -161,7 +161,7 @@ RPKI~\cite{lepinski2012infrastructure} notwendig.
 %
 %
 %
-\section{Threat Modeling}
+\section{Threat Assessment}
 %
 Dieses Kapitel soll ein etwas besseres Verständnis dafür vermitteln, welche Ziele
 besonders lukrativ sind und ob es sich bei BGP-Hijacking gemessen an der Anzahl der
@@ -239,9 +239,9 @@ Auswirkungen von Hijacking Incidents abzumildern.
 %
 In seiner ursprünglichen Form funktioniert der Austausch von BGP Daten wie bereits
 erwähnt auf Vertrauensbasis, da das Unterlassen einer stringenten Prüfung der
-versendeten/ erhaltenen Daten beträchtliche mengen an Systemleistung einspart.
+versendeten/ erhaltenen Daten beträchtliche Mengen an Systemleistung einspart.
 %
-Die dedizierten BGP Router, die die ASes miteinander verbinden, informieren sich also
+Die dedizierten BGP Router, die die ASes miteinander verbinden informieren sich also
 gegenseitig darüber, mit welchen ASes sie jeweils verbunden sind.
 %
 In einer Kette von 3 ASes (Bspw. AS 1, AS 2 und AS 3 mit AS 2 in der Mitte) würde AS 2
@@ -292,22 +292,35 @@ Papers dabei belassen.
 \section{Kategorien von Angriffen}
 %
 Manche Quellen~\cite{jaw2024serial} teilen BGP Hijacking incidents grob in die Kategorien
-\enquote{Prefix Hijacks} und \enquote{Path Hijacks} ein, während andere Quellen diese
-Unterscheidung nicht vornehmen und allgemein von \enquote{BGP Hijacks} sprechen.
+\enquote{Prefix Hijacks} und \enquote{Path Hijacks} ein.
+%
+Andere Quellen nehmen diese Unterscheidung nicht vor und bezeichnen alle Arten von
+Vorfällen als \enquote{BGP Prefix Hijacks}~\cite{sermpezis2018survey}.
 %
 Manche Quellen nehmen sogar noch feinere Einteilungen vor und zerlegen Beispielsweise
 die Klasse der Prefix Hijacks in \enquote{Black-Hole-Attacks} und
 \enquote{Interception-Attacks}~\cite{oesterle2021challenges}.
 %
-Außerdem werden teils unterschiedliche Begriffe für die Gleichen Angriffe verwendet,
-wie es zum Beispiel bei \enquote{Prefix Hijacking} und \enquote{Origin Hijacking} der
-Fall ist.
+Teileweise wird auch gemessen daran, ob eine böse Absicht vorliegt, zwischen \enquote{BGP
+Hijacks} und eher unabsichtlichen Fehlkonfigurationen, dann of genannt \enquote{BGP
+Leaks}, unterschieden~\cite{hijack_frequencies10078883}.
+%
+\par
+\noindent
+%
+Insbesondere Quellen die weniger strikten wissenschaftlichen Standards folgen und die im
+Internet auf Webseiten wie Wikipedia oder in Blogs zu finden sind, vermischen die
+Bezeichnungen wie \enquote{Prefix Hijacking}, \enquote{Origin Hijacking},
+\enquote{BGP Hijacking}, \enquote{Route Hijacking} und \enquote{Path Hijacking} komplett.
+%
+\par
+\noindent
 %
 Insgesamt haben sowohl unsere eigene Literaturrecherche als auch die anderer Autoren
 ergeben, dass die Kategorisierungen und Bezeichnungen von Angriffen teilweise
 inkonsistent sind~\cite{raynor2022state}.
 %
-In diesem Paper werden wir deshalb die relativ gängige Einteilung in
+In diesem Paper werden wir deshalb die verhältnismäßig gängige Einteilung in
 \enquote{Prefix Hijacks} und \enquote{Path Hijacks} verwenden, je nachdem, ob der Angriff
 sich hauptsächlich über den Adressraum selbst oder über den Pfad zu einem entsprechenden
 Adressraum definiert.
@@ -364,7 +377,7 @@ unspezifischen Announcements verwerfen.
 %
 Um sein Ziel zu erreichen muss er dann eine auffällig hohe Menge an sehr spezifischen
 Announcements versenden, was schnell dazu führen kann, dass der Angriff als solcher
-erkannt wird.
+erkannt wird~\cite{Musawi_survey:2016}.
 %
 \par
 \noindent
@@ -428,7 +441,7 @@ irgendeinem Grund (Beispielsweise wegen RPKI) nicht in der Lage sind, noch spezi
 Announcements zu versenden als die legitimen Besitzer des Adressraumes.
 %
 Wenn die Angreifer nur in der Lage sind einen Prefix der gleichen Länge zu versenden
-wie die legitimen Besitzer eines Adressraumes dient die Pfadlänge als tie-breaker.
+wie die legitimen Besitzer eines Adressraumes, dient die Pfadlänge als tie-breaker.
 %
 In diesem Fall wird der Teil des Traffics an den Angreifer umgeleitet, der von
 Absendern kommt, die näher an dem AS des Angreifers liegen als an dem des
@@ -444,7 +457,7 @@ Ziel zu kennen aber immer noch Versuchen zu erreichen, dass andere ASes ihren Tr
 dem Angreifer schicken, weil sie denken, dass der Angreifer ihn besonders schnell
 weiterleiten könne.
 %
-In diesem Fall würde das AS des Angreifers dann nicht mehr vorgeben das Ziel des traffics
+In diesem Fall würde das AS des Angreifers dann nicht mehr vorgeben das Ziel des Traffics
 zu sein, sondern lediglich als besonders attraktives Transit-AS auftreten.
 %
 \par
@@ -461,7 +474,7 @@ Er kann ihn in der Rolle des Ziel-AS verwerfen oder ihn als Transit-AS einfach n
 mehr weiterleiten.
 %
 Genauso gut kann er den Traffic nachdem er ihn beispielsweise inspiziert oder
-modifiziert hat auch in beiden Fällen an den legitimen empfänger weiterleiten, um
+modifiziert hat auch in beiden Fällen an den legitimen Empfänger weiterleiten, um
 nicht so schnell aufzufallen und noch mehr Informationen abzugreifen.
 %
 %
@@ -471,16 +484,19 @@ nicht so schnell aufzufallen und noch mehr Informationen abzugreifen.
 Die Sicherheitsmaßnahmen lassen sich im Wesentlichen in zwei Kategorien unterteilen
 \cite{shapira2022ap2vec}.
 %
-Zum einen gibt es die präventiven Maßnahmen, die verhindern sollen, dass es überhaupt
-zu Hijacks und Route Leaks kommt.
+Die erste Kategorie beinhaltet die präventiven Maßnahmen, die verhindern sollen, dass es
+überhaupt zu Hijacks und Route Leaks kommt.
 %
-Zu diesen Methoden gehören RPKI, BGPSec und RouteFiltering.
+Zu diesen Methoden gehören unter anderem RPKI~\cite{lepinski2012infrastructure},
+SBGP~\cite{kent2002secure}, BGPSec~\cite{lepinski2017bgpsec} und RouteFiltering.
 %
-Die zweite Kategorie beinhaltet die Maßnahmen, die der Erkennung von Hijacks dienen,
-sobald diese auftreten.
+Die zweite Kategorie umfasst die Maßnahmen, die der Erkennung von Hijacks dienen,
+sobald oder nachdem diese auftreten~\cite{Musawi_survey:2016, raynor2022state,
+hoarau2021suitability}.
 %
-In dieser Kategorie befinden sich Verfahren, die sich mit dem Monitoring und der
-Anomalieerkennung beschäftigen.
+In dieser Kategorie befinden sich Verfahren, die sich mit dem (Live)
+Monitoring und der Anomalieerkennung beschäftigen~\cite{Holterbach:295685,
+shapira2022ap2vec, buehler:2023, sermpezis2018artemis}.
 %
 \newline
 \newline
@@ -533,11 +549,11 @@ abgenommen~\cite{chung2019rpki, jaw2024serial}.
 \newline
 \newline
 %
-\textbf{BGPsec}
+\textbf{BGPSec}
 %
 \newline
 %
-Ähnlich wie RPKI ist auch BGPsec~\cite{lepinski2017bgpsec} ein kryptografisches
+Ähnlich wie RPKI ist auch BGPSec~\cite{lepinski2017bgpsec} ein kryptografisches
 Verfahren.
 %
 Im Unterschied zu RPKI werden hier aber nicht die kombinationen aus AS\_Number und
@@ -623,8 +639,11 @@ auch die ausgehenden Announcements.
 Beim Monitoring geht es primär um die Beobachtung von Veränderungen im gewöhnlichen
 Betriebsablauf.
 %
+\par
+\noindent
+%
 Speziell zu diesem Zweck entwickelt gibt es eine Reihe von Monitoring-Tools, die die
-Identifikation von Incidents deutlich erleichtern soll.
+Identifikation von Incidents deutlich erleichtern sollen.
 %
 Beispiel hierfür sind Tools die der Visualisierung von Routen dienen, wodurch
 plötzlich auftretende Veränderungen leichter erkennbar sind~\cite{raynor2022state}.
@@ -632,28 +651,25 @@ plötzlich auftretende Veränderungen leichter erkennbar sind~\cite{raynor2022st
 \par
 \noindent
 %
-Ein Weiteres Beispiel einer Anomalie, die es zu untersuchen gilt, kann eine
-ungewöhnliche Menge an Traffic, insbesondere in Form von BGP-Announcements sein.
+Andere Tools untersuchen die Menge an BGP-Traffic und die Frequenz von BGP-Update
+Nachrichten~\cite{Musawi_survey:2016}.
 %
-Werden plötzlich ungewohnt hohe Mengen an Traffic durch das eigene Netzwerk geleitet,
-kann dies ein Hinweis darauf sein, dass sich eine Route geändert hat und es gilt wie
-zuvor beschrieben herauszufinden, warum dies der Fall ist.
+Häufigkeitsanalysen können auch mit der Untersuchung anderer Features der Nachrichten
+wie der Länge von Pfaden oder dem Auftreten von verdächtigen ASNs kombiniert werden,
+um die Erkennungsrate zu erhöhen~\cite{Musawi_survey:2016}.
 %
-Erhält der eigene Router plötzlich eine auffällig hohe Menge an BGP-Announcements,
-ist dies möglicherweise ein Indiz dafür, dass ein anderes AS versucht das Routing
-gezielt zu manipulieren.
-%
-Das passiert zum Beispiel dann, wenn ein AS einen großen Adressraum mit vielen, sehr
-spezifischen Announcements mit langen Präfixen übernehmen möchte.
+Eine besondere Herausforderung ist aber immer die Unterscheidung zwischen
+\enquote{natürlichen} Vorfällen, die Beispielsweise durch Hardwareausfälle bedingt
+sind und solchen Vorfällen, die tatsächlich auf das handeln böswilliger Akteure
+zurückzuführen sind.
 %
 \newline
 %
-Um bösartige Angriffe von \enquote{normalen} Vorfällen zu unterscheiden, kann eine
-Analyse der von einer Umleitung betroffenen prefixes
-helfen\cite{buehler:2023}.
+Um bösartige Angriffe von \enquote{natürlichen} Vorfällen zu unterscheiden, kann eine
+Analyse der von einer Umleitung betroffenen Prefixes helfen~\cite{buehler:2023}.
 %
 Die meisten ASes announcen mehrere Prefixes wodurch im Falle eines gewöhnlichen
-technischen Defektes auch der Traffic für all diese Prefixe umgeleitet wird.
+technischen Defektes auch der Traffic für all diese Prefixes umgeleitet wird.
 %
 Gezielte Angriffe konzentrieren sich aber oft nur auf ein Subset der Prefixes eines
 ASes, wodurch letztendlich auch nur das entsprechende Subset an Traffic umgeleitet wird,
@@ -661,7 +677,7 @@ während der Traffic der nicht betroffenen Prefixes weiterhin die übliche Route
 %
 Ein solcher Angriff lässt sich dann möglicherweise daran erkennen, dass die Pakete, die
 an einen gehijackten Teil des Adressraumes gesendet werden eine höhere Latenz
-beziehungsweise Round Trip Time haben.
+beziehungsweise Round Trip Time haben~\cite{buehler:2023}.
 %
 \newline
 \newline
@@ -670,19 +686,19 @@ beziehungsweise Round Trip Time haben.
 %
 \newline
 %
-Wie in vielen anderen technischen Bereichen gewinnen auch bei der Anomalieerkennung
-KI-basierte Methoden zunehmend an Bedeutung.
+Wie in vielen anderen technischen Bereichen gibt es auch bei der Anomalieerkennung
+eine zunehmende Auswahl an KI-basierten Methoden.
 %
-Das Internet entspricht einem Graphen, bei dem die (BGP) Router die Knoten und die
-Verbindungen zwischen ihnen die Kanten darstellen.
+Das Internet lässt sich sehr gut als Graph modellieren, bei dem die (BGP) Router die
+Knoten und die Verbindungen zwischen ihnen die Kanten darstellen.
 %
 Entsprechend gut lassen sich Graphenbasierte Machine Learning Architekturen auf das
-Problem anwenden\cite{hoarau2021suitability}.
+Problem anwenden~\cite{hoarau2021suitability}.
 %
 \newline
 %
 Ein alternativer Ansatz ist ein NLP-basiertes Verfahren, das in Anlehnung an Word2Vec
-AP2Vec\cite{shapira2022ap2vec} getauft wurde.
+AP2Vec~\cite{shapira2022ap2vec} getauft wurde.
 %
 Es basiert auf der Annahme, dass ASes verschiedene Rollen wie tier-1 oder tier-2
 Provider oder auch cloud Provider besitzen und sich die Verteilung der Rollen auf
@@ -725,16 +741,21 @@ Während mangelnde Fachkenntnisse durch gezielte Schulungen von Administratoren 
 Betreibern behoben werden können, lässt sich der finanzielle Aspekt nur schwer
 eliminieren.
 %
-Die letzte und vielleicht einzige Möglichkeit besonders kostenoptimiert arbeitenden
-Betreibern zu begegnen wäre das Schaffen eines gesetzlichen Rahmens, der fahrlässiges
-Handeln unter so hohe Strafen stellt, dass die Implementierung von
-Sicherheitsmaßnahmen die günstigere Option ist.
+\newline
 %
-Solche Gesetze international zu erlassen und anschließend auch durchzusetzen ist aber
-schier unmöglich, insbesondere da einige Staaten beispielsweise zwecks Spionage oder
-Zensur auch gar kein Interesse an der vollständigen Schließung sämtlicher
-Sicherheitslücken haben.
+Möglicherweise besteht die Option besonders kostenoptimiert arbeitenden Betreibern zu
+begegnen, indem ein gesetzlicher Rahmen geschaffen wird, der fahrlässiges Handeln unter
+so hohe Strafen stellt, dass die Implementierung von Sicherheitsmaßnahmen die günstigere
+Option ist.
 %
+Solche Gesetze international zu erlassen und anschließend auch durchzusetzen scheint
+aber ein schwieriges Unterfangen darzustellen, insbesondere da einige Staaten
+beispielsweise zwecks Spionage oder Zensur vermutlich kein hohes Interesse an der
+vollständigen Schließung sämtlicher Sicherheitslücken haben.
+%
+Uns sind zu dem Zeitpunkt der Verfassung dieses Papers keine Anstrengungen dieser Art
+bekannt, weder durch einzelne Länder noch durch Vereinigungen von Staaten oder Ländern
+wie Beispielsweise den USA oder die EU.
 %
 %
 %\newpage
